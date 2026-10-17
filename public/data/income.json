@@ -1,0 +1,3234 @@
+{
+  "source": "OSITRAN y BCRP; datos procesados suministrados por autores",
+  "rows": [
+    {
+      "op": "APM",
+      "month": "2014-01",
+      "revenue": 9229791.44,
+      "teu": 43130,
+      "vessels": 184
+    },
+    {
+      "op": "APM",
+      "month": "2014-02",
+      "revenue": 8282750.45,
+      "teu": 37804,
+      "vessels": 173
+    },
+    {
+      "op": "APM",
+      "month": "2014-03",
+      "revenue": 8555554.04,
+      "teu": 39745,
+      "vessels": 201
+    },
+    {
+      "op": "APM",
+      "month": "2014-04",
+      "revenue": 8122494.25,
+      "teu": 42215,
+      "vessels": 188
+    },
+    {
+      "op": "APM",
+      "month": "2014-05",
+      "revenue": 9106731.8,
+      "teu": 41013,
+      "vessels": 195
+    },
+    {
+      "op": "APM",
+      "month": "2014-06",
+      "revenue": 8445003.56,
+      "teu": 39573,
+      "vessels": 171
+    },
+    {
+      "op": "APM",
+      "month": "2014-07",
+      "revenue": 8706283.13,
+      "teu": 40072,
+      "vessels": 187
+    },
+    {
+      "op": "APM",
+      "month": "2014-08",
+      "revenue": 8602917.41,
+      "teu": 43428,
+      "vessels": 200
+    },
+    {
+      "op": "APM",
+      "month": "2014-09",
+      "revenue": 8413721.34,
+      "teu": 42988,
+      "vessels": 189
+    },
+    {
+      "op": "APM",
+      "month": "2014-10",
+      "revenue": 8080377.01,
+      "teu": 39776,
+      "vessels": 194
+    },
+    {
+      "op": "APM",
+      "month": "2014-11",
+      "revenue": 8743731.82,
+      "teu": 38635,
+      "vessels": 182
+    },
+    {
+      "op": "APM",
+      "month": "2014-12",
+      "revenue": 9541796.48,
+      "teu": 42599,
+      "vessels": 192
+    },
+    {
+      "op": "APM",
+      "month": "2015-01",
+      "revenue": 8530600.88,
+      "teu": 35279,
+      "vessels": 202
+    },
+    {
+      "op": "APM",
+      "month": "2015-02",
+      "revenue": 7458065.07,
+      "teu": 35929,
+      "vessels": 146
+    },
+    {
+      "op": "APM",
+      "month": "2015-03",
+      "revenue": 9168894.96,
+      "teu": 45943,
+      "vessels": 195
+    },
+    {
+      "op": "APM",
+      "month": "2015-04",
+      "revenue": 8621646.32,
+      "teu": 36969,
+      "vessels": 172
+    },
+    {
+      "op": "APM",
+      "month": "2015-05",
+      "revenue": 6167632.62,
+      "teu": 38925,
+      "vessels": 145
+    },
+    {
+      "op": "APM",
+      "month": "2015-06",
+      "revenue": 10522694.77,
+      "teu": 47615,
+      "vessels": 157
+    },
+    {
+      "op": "APM",
+      "month": "2015-07",
+      "revenue": 11667756.21,
+      "teu": 48114,
+      "vessels": 198
+    },
+    {
+      "op": "APM",
+      "month": "2015-08",
+      "revenue": 11382830.3,
+      "teu": 56946,
+      "vessels": 192
+    },
+    {
+      "op": "APM",
+      "month": "2015-09",
+      "revenue": 11080013.04,
+      "teu": 60512,
+      "vessels": 171
+    },
+    {
+      "op": "APM",
+      "month": "2015-10",
+      "revenue": 11548741.6,
+      "teu": 56935,
+      "vessels": 196
+    },
+    {
+      "op": "APM",
+      "month": "2015-11",
+      "revenue": 11714641.38,
+      "teu": 58332,
+      "vessels": 191
+    },
+    {
+      "op": "APM",
+      "month": "2015-12",
+      "revenue": 10815511.41,
+      "teu": 66913,
+      "vessels": 179
+    },
+    {
+      "op": "APM",
+      "month": "2016-01",
+      "revenue": 9338519.03,
+      "teu": 55821,
+      "vessels": 162
+    },
+    {
+      "op": "APM",
+      "month": "2016-02",
+      "revenue": 9077145.84,
+      "teu": 57324,
+      "vessels": 161
+    },
+    {
+      "op": "APM",
+      "month": "2016-03",
+      "revenue": 9947690.54,
+      "teu": 60980,
+      "vessels": 188
+    },
+    {
+      "op": "APM",
+      "month": "2016-04",
+      "revenue": 10619733.68,
+      "teu": 64135,
+      "vessels": 176
+    },
+    {
+      "op": "APM",
+      "month": "2016-05",
+      "revenue": 9722231.88,
+      "teu": 73513,
+      "vessels": 173
+    },
+    {
+      "op": "APM",
+      "month": "2016-06",
+      "revenue": 9848737.2,
+      "teu": 65068,
+      "vessels": 165
+    },
+    {
+      "op": "APM",
+      "month": "2016-07",
+      "revenue": 10677980.35,
+      "teu": 66041,
+      "vessels": 166
+    },
+    {
+      "op": "APM",
+      "month": "2016-08",
+      "revenue": 13172576.39,
+      "teu": 74560,
+      "vessels": 166
+    },
+    {
+      "op": "APM",
+      "month": "2016-09",
+      "revenue": 13530539.74,
+      "teu": 89679,
+      "vessels": 164
+    },
+    {
+      "op": "APM",
+      "month": "2016-10",
+      "revenue": 14681425.79,
+      "teu": 85848,
+      "vessels": 187
+    },
+    {
+      "op": "APM",
+      "month": "2016-11",
+      "revenue": 12280276.27,
+      "teu": 87781,
+      "vessels": 163
+    },
+    {
+      "op": "APM",
+      "month": "2016-12",
+      "revenue": 13882994.88,
+      "teu": 90417,
+      "vessels": 165
+    },
+    {
+      "op": "APM",
+      "month": "2017-01",
+      "revenue": 12110402.14,
+      "teu": 88209,
+      "vessels": 178
+    },
+    {
+      "op": "APM",
+      "month": "2017-02",
+      "revenue": 11777585.69,
+      "teu": 68208,
+      "vessels": 146
+    },
+    {
+      "op": "APM",
+      "month": "2017-03",
+      "revenue": 13050660.65,
+      "teu": 69476,
+      "vessels": 169
+    },
+    {
+      "op": "APM",
+      "month": "2017-04",
+      "revenue": 12433688.3,
+      "teu": 73746,
+      "vessels": 173
+    },
+    {
+      "op": "APM",
+      "month": "2017-05",
+      "revenue": 12133355.81,
+      "teu": 73999,
+      "vessels": 171
+    },
+    {
+      "op": "APM",
+      "month": "2017-06",
+      "revenue": 11410199.58,
+      "teu": 64010,
+      "vessels": 167
+    },
+    {
+      "op": "APM",
+      "month": "2017-07",
+      "revenue": 13240554.91,
+      "teu": 70192,
+      "vessels": 175
+    },
+    {
+      "op": "APM",
+      "month": "2017-08",
+      "revenue": 15565470.35,
+      "teu": 86467,
+      "vessels": 171
+    },
+    {
+      "op": "APM",
+      "month": "2017-09",
+      "revenue": 14805022.29,
+      "teu": 89121,
+      "vessels": 168
+    },
+    {
+      "op": "APM",
+      "month": "2017-10",
+      "revenue": 15154122.05,
+      "teu": 86440,
+      "vessels": 177
+    },
+    {
+      "op": "APM",
+      "month": "2017-11",
+      "revenue": 14933790.7,
+      "teu": 86751,
+      "vessels": 181
+    },
+    {
+      "op": "APM",
+      "month": "2017-12",
+      "revenue": 15037182.2,
+      "teu": 93620,
+      "vessels": 173
+    },
+    {
+      "op": "APM",
+      "month": "2018-01",
+      "revenue": 15557831.21,
+      "teu": 93479,
+      "vessels": 164
+    },
+    {
+      "op": "APM",
+      "month": "2018-02",
+      "revenue": 14235500.4,
+      "teu": 81063,
+      "vessels": 140
+    },
+    {
+      "op": "APM",
+      "month": "2018-03",
+      "revenue": 15123847.35,
+      "teu": 76350,
+      "vessels": 163
+    },
+    {
+      "op": "APM",
+      "month": "2018-04",
+      "revenue": 16412125.8,
+      "teu": 73543,
+      "vessels": 157
+    },
+    {
+      "op": "APM",
+      "month": "2018-05",
+      "revenue": 15848149.7,
+      "teu": 79835,
+      "vessels": 157
+    },
+    {
+      "op": "APM",
+      "month": "2018-06",
+      "revenue": 14642701.75,
+      "teu": 73732,
+      "vessels": 137
+    },
+    {
+      "op": "APM",
+      "month": "2018-07",
+      "revenue": 17212825.29,
+      "teu": 95963,
+      "vessels": 144
+    },
+    {
+      "op": "APM",
+      "month": "2018-08",
+      "revenue": 16439403.0,
+      "teu": 91923,
+      "vessels": 150
+    },
+    {
+      "op": "APM",
+      "month": "2018-09",
+      "revenue": 17809693.04,
+      "teu": 83058,
+      "vessels": 145
+    },
+    {
+      "op": "APM",
+      "month": "2018-10",
+      "revenue": 17862460.8,
+      "teu": 86971,
+      "vessels": 151
+    },
+    {
+      "op": "APM",
+      "month": "2018-11",
+      "revenue": 14529131.63,
+      "teu": 79594,
+      "vessels": 131
+    },
+    {
+      "op": "APM",
+      "month": "2018-12",
+      "revenue": 16640244.91,
+      "teu": 83669,
+      "vessels": 151
+    },
+    {
+      "op": "APM",
+      "month": "2019-01",
+      "revenue": 16827632.89,
+      "teu": 87840,
+      "vessels": 149
+    },
+    {
+      "op": "APM",
+      "month": "2019-02",
+      "revenue": 14956036.73,
+      "teu": 74636,
+      "vessels": 125
+    },
+    {
+      "op": "APM",
+      "month": "2019-03",
+      "revenue": 15566222.33,
+      "teu": 69842,
+      "vessels": 161
+    },
+    {
+      "op": "APM",
+      "month": "2019-04",
+      "revenue": 15522849.51,
+      "teu": 68793,
+      "vessels": 127
+    },
+    {
+      "op": "APM",
+      "month": "2019-05",
+      "revenue": 16692982.41,
+      "teu": 70509,
+      "vessels": 144
+    },
+    {
+      "op": "APM",
+      "month": "2019-06",
+      "revenue": 15553606.19,
+      "teu": 67109,
+      "vessels": 129
+    },
+    {
+      "op": "APM",
+      "month": "2019-07",
+      "revenue": 15813079.53,
+      "teu": 74384,
+      "vessels": 128
+    },
+    {
+      "op": "APM",
+      "month": "2019-08",
+      "revenue": 17545668.73,
+      "teu": 83457,
+      "vessels": 136
+    },
+    {
+      "op": "APM",
+      "month": "2019-09",
+      "revenue": 16085436.7,
+      "teu": 76828,
+      "vessels": 140
+    },
+    {
+      "op": "APM",
+      "month": "2019-10",
+      "revenue": 16419361.75,
+      "teu": 74264,
+      "vessels": 137
+    },
+    {
+      "op": "APM",
+      "month": "2019-11",
+      "revenue": 16783761.24,
+      "teu": 72662,
+      "vessels": 154
+    },
+    {
+      "op": "APM",
+      "month": "2019-12",
+      "revenue": 17844340.9,
+      "teu": 78481,
+      "vessels": 147
+    },
+    {
+      "op": "APM",
+      "month": "2020-01",
+      "revenue": 17397885.74,
+      "teu": 77368,
+      "vessels": 137
+    },
+    {
+      "op": "APM",
+      "month": "2020-02",
+      "revenue": 15024557.79,
+      "teu": 69782,
+      "vessels": 153
+    },
+    {
+      "op": "APM",
+      "month": "2020-03",
+      "revenue": 16044767.86,
+      "teu": 68188,
+      "vessels": 150
+    },
+    {
+      "op": "APM",
+      "month": "2020-04",
+      "revenue": 15396429.8,
+      "teu": 61797,
+      "vessels": 126
+    },
+    {
+      "op": "APM",
+      "month": "2020-05",
+      "revenue": 15991597.64,
+      "teu": 66589,
+      "vessels": 118
+    },
+    {
+      "op": "APM",
+      "month": "2020-06",
+      "revenue": 12389052.07,
+      "teu": 48465,
+      "vessels": 99
+    },
+    {
+      "op": "APM",
+      "month": "2020-07",
+      "revenue": 13455656.28,
+      "teu": 66623,
+      "vessels": 103
+    },
+    {
+      "op": "APM",
+      "month": "2020-08",
+      "revenue": 14627321.73,
+      "teu": 72731,
+      "vessels": 118
+    },
+    {
+      "op": "APM",
+      "month": "2020-09",
+      "revenue": 15131881.44,
+      "teu": 69265,
+      "vessels": 121
+    },
+    {
+      "op": "APM",
+      "month": "2020-10",
+      "revenue": 14707633.62,
+      "teu": 74264,
+      "vessels": 122
+    },
+    {
+      "op": "APM",
+      "month": "2020-11",
+      "revenue": 18126014.84,
+      "teu": 86397,
+      "vessels": 118
+    },
+    {
+      "op": "APM",
+      "month": "2020-12",
+      "revenue": 19871672.87,
+      "teu": 91413,
+      "vessels": 137
+    },
+    {
+      "op": "APM",
+      "month": "2021-01",
+      "revenue": 19028851.75,
+      "teu": 78616,
+      "vessels": 110
+    },
+    {
+      "op": "APM",
+      "month": "2021-02",
+      "revenue": 18082470.5,
+      "teu": 79491,
+      "vessels": 124
+    },
+    {
+      "op": "APM",
+      "month": "2021-03",
+      "revenue": 20148406.22,
+      "teu": 80763,
+      "vessels": 128
+    },
+    {
+      "op": "APM",
+      "month": "2021-04",
+      "revenue": 19334426.27,
+      "teu": 76506,
+      "vessels": 126
+    },
+    {
+      "op": "APM",
+      "month": "2021-05",
+      "revenue": 21924473.93,
+      "teu": 87551,
+      "vessels": 116
+    },
+    {
+      "op": "APM",
+      "month": "2021-06",
+      "revenue": 21264216.72,
+      "teu": 79786,
+      "vessels": 116
+    },
+    {
+      "op": "APM",
+      "month": "2021-07",
+      "revenue": 20384298.91,
+      "teu": 73433,
+      "vessels": 130
+    },
+    {
+      "op": "APM",
+      "month": "2021-08",
+      "revenue": 21116609.99,
+      "teu": 86517,
+      "vessels": 134
+    },
+    {
+      "op": "APM",
+      "month": "2021-09",
+      "revenue": 19418309.98,
+      "teu": 72198,
+      "vessels": 125
+    },
+    {
+      "op": "APM",
+      "month": "2021-10",
+      "revenue": 21179113.93,
+      "teu": 84458,
+      "vessels": 136
+    },
+    {
+      "op": "APM",
+      "month": "2021-11",
+      "revenue": 18753252.03,
+      "teu": 64221,
+      "vessels": 123
+    },
+    {
+      "op": "APM",
+      "month": "2021-12",
+      "revenue": 19871672.87,
+      "teu": 78917,
+      "vessels": 113
+    },
+    {
+      "op": "APM",
+      "month": "2022-01",
+      "revenue": 21171349.62,
+      "teu": 74932,
+      "vessels": 121
+    },
+    {
+      "op": "APM",
+      "month": "2022-02",
+      "revenue": 21067517.24,
+      "teu": 70643,
+      "vessels": 124
+    },
+    {
+      "op": "APM",
+      "month": "2022-03",
+      "revenue": 21168238.32,
+      "teu": 77330,
+      "vessels": 125
+    },
+    {
+      "op": "APM",
+      "month": "2022-04",
+      "revenue": 21117432.7,
+      "teu": 67365,
+      "vessels": 123
+    },
+    {
+      "op": "APM",
+      "month": "2022-05",
+      "revenue": 20164948.05,
+      "teu": 73410,
+      "vessels": 113
+    },
+    {
+      "op": "APM",
+      "month": "2022-06",
+      "revenue": 19677772.57,
+      "teu": 80068,
+      "vessels": 112
+    },
+    {
+      "op": "APM",
+      "month": "2022-07",
+      "revenue": 23489815.01,
+      "teu": 79713,
+      "vessels": 123
+    },
+    {
+      "op": "APM",
+      "month": "2022-08",
+      "revenue": 21929239.7,
+      "teu": 94849,
+      "vessels": 127
+    },
+    {
+      "op": "APM",
+      "month": "2022-09",
+      "revenue": 21390847.02,
+      "teu": 83268,
+      "vessels": 113
+    },
+    {
+      "op": "APM",
+      "month": "2022-10",
+      "revenue": 23347114.94,
+      "teu": 86583,
+      "vessels": 126
+    },
+    {
+      "op": "APM",
+      "month": "2022-11",
+      "revenue": 19994483.59,
+      "teu": 83560,
+      "vessels": 114
+    },
+    {
+      "op": "APM",
+      "month": "2022-12",
+      "revenue": 23268936.63,
+      "teu": 80362,
+      "vessels": 146
+    },
+    {
+      "op": "APM",
+      "month": "2023-01",
+      "revenue": 20721672.44,
+      "teu": 81571,
+      "vessels": 128
+    },
+    {
+      "op": "APM",
+      "month": "2023-02",
+      "revenue": 20269942.28,
+      "teu": 88564,
+      "vessels": 124
+    },
+    {
+      "op": "APM",
+      "month": "2023-03",
+      "revenue": 21740309.79,
+      "teu": 85889,
+      "vessels": 129
+    },
+    {
+      "op": "APM",
+      "month": "2023-04",
+      "revenue": 21663110.54,
+      "teu": 88113,
+      "vessels": 132
+    },
+    {
+      "op": "APM",
+      "month": "2023-05",
+      "revenue": 19046569.48,
+      "teu": 97681,
+      "vessels": 101
+    },
+    {
+      "op": "APM",
+      "month": "2023-06",
+      "revenue": 20637509.96,
+      "teu": 87740,
+      "vessels": 110
+    },
+    {
+      "op": "APM",
+      "month": "2023-07",
+      "revenue": 23502663.38,
+      "teu": 94510,
+      "vessels": 115
+    },
+    {
+      "op": "APM",
+      "month": "2023-08",
+      "revenue": 21244929.98,
+      "teu": 92501,
+      "vessels": 111
+    },
+    {
+      "op": "APM",
+      "month": "2023-09",
+      "revenue": 21282668.77,
+      "teu": 86390,
+      "vessels": 122
+    },
+    {
+      "op": "APM",
+      "month": "2023-10",
+      "revenue": 23714562.3,
+      "teu": 100716,
+      "vessels": 131
+    },
+    {
+      "op": "APM",
+      "month": "2023-11",
+      "revenue": 21475680.9,
+      "teu": 83133,
+      "vessels": 122
+    },
+    {
+      "op": "APM",
+      "month": "2023-12",
+      "revenue": 23366159.75,
+      "teu": 88957,
+      "vessels": 133
+    },
+    {
+      "op": "APM",
+      "month": "2024-01",
+      "revenue": 23716519.65,
+      "teu": 103073,
+      "vessels": 128
+    },
+    {
+      "op": "APM",
+      "month": "2024-02",
+      "revenue": 21185617.69,
+      "teu": 77340,
+      "vessels": 118
+    },
+    {
+      "op": "APM",
+      "month": "2024-03",
+      "revenue": 22146439.1,
+      "teu": 84718,
+      "vessels": 118
+    },
+    {
+      "op": "APM",
+      "month": "2024-04",
+      "revenue": 22206155.05,
+      "teu": 87336,
+      "vessels": 126
+    },
+    {
+      "op": "APM",
+      "month": "2024-05",
+      "revenue": 21632503.32,
+      "teu": 84306,
+      "vessels": 124
+    },
+    {
+      "op": "APM",
+      "month": "2024-06",
+      "revenue": 22115068.49,
+      "teu": 84101,
+      "vessels": 117
+    },
+    {
+      "op": "APM",
+      "month": "2024-07",
+      "revenue": 25666759.22,
+      "teu": 97699,
+      "vessels": 123
+    },
+    {
+      "op": "APM",
+      "month": "2024-08",
+      "revenue": 24414282.53,
+      "teu": 79461,
+      "vessels": 130
+    },
+    {
+      "op": "APM",
+      "month": "2024-09",
+      "revenue": 24682726.31,
+      "teu": 75644,
+      "vessels": 124
+    },
+    {
+      "op": "APM",
+      "month": "2024-10",
+      "revenue": 25397942.03,
+      "teu": 102137,
+      "vessels": 140
+    },
+    {
+      "op": "APM",
+      "month": "2024-11",
+      "revenue": 25098181.02,
+      "teu": 88831,
+      "vessels": 116
+    },
+    {
+      "op": "APM",
+      "month": "2024-12",
+      "revenue": 26807697.14,
+      "teu": 81118,
+      "vessels": 123
+    },
+    {
+      "op": "APM",
+      "month": "2025-01",
+      "revenue": 30137484.57,
+      "teu": 93219,
+      "vessels": 137
+    },
+    {
+      "op": "APM",
+      "month": "2025-02",
+      "revenue": 23662363.45,
+      "teu": 74993,
+      "vessels": 107
+    },
+    {
+      "op": "APM",
+      "month": "2025-03",
+      "revenue": 28472088.3,
+      "teu": 97137,
+      "vessels": 130
+    },
+    {
+      "op": "APM",
+      "month": "2025-04",
+      "revenue": 39537699.43,
+      "teu": 92925,
+      "vessels": 127
+    },
+    {
+      "op": "APM",
+      "month": "2025-05",
+      "revenue": 26599190.81,
+      "teu": 102351,
+      "vessels": 143
+    },
+    {
+      "op": "APM",
+      "month": "2025-06",
+      "revenue": 27945841.68,
+      "teu": 121408,
+      "vessels": 135
+    },
+    {
+      "op": "APM",
+      "month": "2025-07",
+      "revenue": 28700827.96,
+      "teu": 95450,
+      "vessels": 120
+    },
+    {
+      "op": "APM",
+      "month": "2025-08",
+      "revenue": 29044092.0,
+      "teu": 90365,
+      "vessels": 119
+    },
+    {
+      "op": "APM",
+      "month": "2025-09",
+      "revenue": 29596734.31,
+      "teu": 107168,
+      "vessels": 122
+    },
+    {
+      "op": "APM",
+      "month": "2025-10",
+      "revenue": 27864355.63,
+      "teu": 111456,
+      "vessels": 116
+    },
+    {
+      "op": "APM",
+      "month": "2025-11",
+      "revenue": 28175314.35,
+      "teu": 89965,
+      "vessels": 120
+    },
+    {
+      "op": "APM",
+      "month": "2025-12",
+      "revenue": 29160588.34,
+      "teu": 88352,
+      "vessels": 124
+    },
+    {
+      "op": "APM",
+      "month": "2026-01",
+      "revenue": 29175100.77,
+      "teu": 85838,
+      "vessels": 126
+    },
+    {
+      "op": "APM",
+      "month": "2026-02",
+      "revenue": 25838290.41,
+      "teu": 70493,
+      "vessels": 105
+    },
+    {
+      "op": "APM",
+      "month": "2026-03",
+      "revenue": 29217118.14,
+      "teu": 95399,
+      "vessels": 129
+    },
+    {
+      "op": "APM",
+      "month": "2026-04",
+      "revenue": 31465273.1,
+      "teu": 93978,
+      "vessels": 132
+    },
+    {
+      "op": "APM",
+      "month": "2026-05",
+      "revenue": 31221508.47,
+      "teu": 99268,
+      "vessels": 142
+    },
+    {
+      "op": "APM",
+      "month": "2026-06",
+      "revenue": 28295769.42,
+      "teu": 92971,
+      "vessels": 114
+    },
+    {
+      "op": "APM",
+      "month": "2026-07",
+      "revenue": 32595164.76,
+      "teu": 94870,
+      "vessels": 120
+    },
+    {
+      "op": "DPW",
+      "month": "2014-01",
+      "revenue": 11235635.01,
+      "teu": 112217,
+      "vessels": 71
+    },
+    {
+      "op": "DPW",
+      "month": "2014-02",
+      "revenue": 11479505.0,
+      "teu": 107962,
+      "vessels": 67
+    },
+    {
+      "op": "DPW",
+      "month": "2014-03",
+      "revenue": 12314599.29,
+      "teu": 118843,
+      "vessels": 71
+    },
+    {
+      "op": "DPW",
+      "month": "2014-04",
+      "revenue": 12356014.0,
+      "teu": 119618,
+      "vessels": 72
+    },
+    {
+      "op": "DPW",
+      "month": "2014-05",
+      "revenue": 12863575.25,
+      "teu": 126505,
+      "vessels": 73
+    },
+    {
+      "op": "DPW",
+      "month": "2014-06",
+      "revenue": 13246254.0,
+      "teu": 122290,
+      "vessels": 70
+    },
+    {
+      "op": "DPW",
+      "month": "2014-07",
+      "revenue": 12733715.0,
+      "teu": 115906,
+      "vessels": 72
+    },
+    {
+      "op": "DPW",
+      "month": "2014-08",
+      "revenue": 12505898.0,
+      "teu": 113457,
+      "vessels": 67
+    },
+    {
+      "op": "DPW",
+      "month": "2014-09",
+      "revenue": 12748194.0,
+      "teu": 124936,
+      "vessels": 69
+    },
+    {
+      "op": "DPW",
+      "month": "2014-10",
+      "revenue": 12186208.0,
+      "teu": 117358,
+      "vessels": 72
+    },
+    {
+      "op": "DPW",
+      "month": "2014-11",
+      "revenue": 12299994.0,
+      "teu": 122309,
+      "vessels": 66
+    },
+    {
+      "op": "DPW",
+      "month": "2014-12",
+      "revenue": 13156989.0,
+      "teu": 125115,
+      "vessels": 70
+    },
+    {
+      "op": "DPW",
+      "month": "2015-01",
+      "revenue": 13123209.0,
+      "teu": 116147,
+      "vessels": 65
+    },
+    {
+      "op": "DPW",
+      "month": "2015-02",
+      "revenue": 11401016.0,
+      "teu": 109481,
+      "vessels": 66
+    },
+    {
+      "op": "DPW",
+      "month": "2015-03",
+      "revenue": 10744786.77,
+      "teu": 100025,
+      "vessels": 65
+    },
+    {
+      "op": "DPW",
+      "month": "2015-04",
+      "revenue": 10046839.0,
+      "teu": 92078,
+      "vessels": 61
+    },
+    {
+      "op": "DPW",
+      "month": "2015-05",
+      "revenue": 12511014.59,
+      "teu": 111268,
+      "vessels": 72
+    },
+    {
+      "op": "DPW",
+      "month": "2015-06",
+      "revenue": 12355388.48,
+      "teu": 113854,
+      "vessels": 70
+    },
+    {
+      "op": "DPW",
+      "month": "2015-07",
+      "revenue": 11821798.39,
+      "teu": 104126,
+      "vessels": 66
+    },
+    {
+      "op": "DPW",
+      "month": "2015-08",
+      "revenue": 12617655.52,
+      "teu": 106273,
+      "vessels": 69
+    },
+    {
+      "op": "DPW",
+      "month": "2015-09",
+      "revenue": 10929568.69,
+      "teu": 94532,
+      "vessels": 66
+    },
+    {
+      "op": "DPW",
+      "month": "2015-10",
+      "revenue": 11371526.96,
+      "teu": 97787,
+      "vessels": 69
+    },
+    {
+      "op": "DPW",
+      "month": "2015-11",
+      "revenue": 9747641.13,
+      "teu": 85407,
+      "vessels": 64
+    },
+    {
+      "op": "DPW",
+      "month": "2015-12",
+      "revenue": 11530369.99,
+      "teu": 107925,
+      "vessels": 71
+    },
+    {
+      "op": "DPW",
+      "month": "2016-01",
+      "revenue": 10853903.42,
+      "teu": 98556,
+      "vessels": 73
+    },
+    {
+      "op": "DPW",
+      "month": "2016-02",
+      "revenue": 9883750.55,
+      "teu": 88010,
+      "vessels": 64
+    },
+    {
+      "op": "DPW",
+      "month": "2016-03",
+      "revenue": 9532048.22,
+      "teu": 81266,
+      "vessels": 64
+    },
+    {
+      "op": "DPW",
+      "month": "2016-04",
+      "revenue": 9735518.34,
+      "teu": 90669,
+      "vessels": 60
+    },
+    {
+      "op": "DPW",
+      "month": "2016-05",
+      "revenue": 9655747.06,
+      "teu": 87525,
+      "vessels": 66
+    },
+    {
+      "op": "DPW",
+      "month": "2016-06",
+      "revenue": 9652159.14,
+      "teu": 90655,
+      "vessels": 65
+    },
+    {
+      "op": "DPW",
+      "month": "2016-07",
+      "revenue": 10781413.22,
+      "teu": 97639,
+      "vessels": 67
+    },
+    {
+      "op": "DPW",
+      "month": "2016-08",
+      "revenue": 11406984.82,
+      "teu": 93953,
+      "vessels": 70
+    },
+    {
+      "op": "DPW",
+      "month": "2016-09",
+      "revenue": 10573500.57,
+      "teu": 95806,
+      "vessels": 69
+    },
+    {
+      "op": "DPW",
+      "month": "2016-10",
+      "revenue": 10755432.55,
+      "teu": 95675,
+      "vessels": 70
+    },
+    {
+      "op": "DPW",
+      "month": "2016-11",
+      "revenue": 9904068.0,
+      "teu": 88244,
+      "vessels": 67
+    },
+    {
+      "op": "DPW",
+      "month": "2016-12",
+      "revenue": 11582582.6,
+      "teu": 101709,
+      "vessels": 70
+    },
+    {
+      "op": "DPW",
+      "month": "2017-01",
+      "revenue": 12372748.39,
+      "teu": 106807,
+      "vessels": 76
+    },
+    {
+      "op": "DPW",
+      "month": "2017-02",
+      "revenue": 10463683.19,
+      "teu": 92633,
+      "vessels": 59
+    },
+    {
+      "op": "DPW",
+      "month": "2017-03",
+      "revenue": 11500778.87,
+      "teu": 101272,
+      "vessels": 72
+    },
+    {
+      "op": "DPW",
+      "month": "2017-04",
+      "revenue": 10401789.6,
+      "teu": 94921,
+      "vessels": 64
+    },
+    {
+      "op": "DPW",
+      "month": "2017-05",
+      "revenue": 11257415.8,
+      "teu": 93004,
+      "vessels": 60
+    },
+    {
+      "op": "DPW",
+      "month": "2017-06",
+      "revenue": 11979313.72,
+      "teu": 103737,
+      "vessels": 64
+    },
+    {
+      "op": "DPW",
+      "month": "2017-07",
+      "revenue": 13156068.34,
+      "teu": 108190,
+      "vessels": 64
+    },
+    {
+      "op": "DPW",
+      "month": "2017-08",
+      "revenue": 12590703.23,
+      "teu": 103410,
+      "vessels": 64
+    },
+    {
+      "op": "DPW",
+      "month": "2017-09",
+      "revenue": 11599469.02,
+      "teu": 102086,
+      "vessels": 63
+    },
+    {
+      "op": "DPW",
+      "month": "2017-10",
+      "revenue": 11462732.54,
+      "teu": 99827,
+      "vessels": 61
+    },
+    {
+      "op": "DPW",
+      "month": "2017-11",
+      "revenue": 10963844.86,
+      "teu": 92554,
+      "vessels": 60
+    },
+    {
+      "op": "DPW",
+      "month": "2017-12",
+      "revenue": 11955410.13,
+      "teu": 104876,
+      "vessels": 64
+    },
+    {
+      "op": "DPW",
+      "month": "2018-01",
+      "revenue": 11473263.62,
+      "teu": 96958,
+      "vessels": 64
+    },
+    {
+      "op": "DPW",
+      "month": "2018-02",
+      "revenue": 10028602.32,
+      "teu": 90204,
+      "vessels": 60
+    },
+    {
+      "op": "DPW",
+      "month": "2018-03",
+      "revenue": 10959872.47,
+      "teu": 91262,
+      "vessels": 60
+    },
+    {
+      "op": "DPW",
+      "month": "2018-04",
+      "revenue": 10931908.62,
+      "teu": 92744,
+      "vessels": 64
+    },
+    {
+      "op": "DPW",
+      "month": "2018-05",
+      "revenue": 12265334.37,
+      "teu": 104334,
+      "vessels": 63
+    },
+    {
+      "op": "DPW",
+      "month": "2018-06",
+      "revenue": 12670265.38,
+      "teu": 107960,
+      "vessels": 59
+    },
+    {
+      "op": "DPW",
+      "month": "2018-07",
+      "revenue": 13008596.93,
+      "teu": 104954,
+      "vessels": 61
+    },
+    {
+      "op": "DPW",
+      "month": "2018-08",
+      "revenue": 13362969.86,
+      "teu": 114727,
+      "vessels": 65
+    },
+    {
+      "op": "DPW",
+      "month": "2018-09",
+      "revenue": 13481188.84,
+      "teu": 120445,
+      "vessels": 62
+    },
+    {
+      "op": "DPW",
+      "month": "2018-10",
+      "revenue": 12785031.44,
+      "teu": 116870,
+      "vessels": 67
+    },
+    {
+      "op": "DPW",
+      "month": "2018-11",
+      "revenue": 12960294.79,
+      "teu": 113261,
+      "vessels": 62
+    },
+    {
+      "op": "DPW",
+      "month": "2018-12",
+      "revenue": 13474941.27,
+      "teu": 116070,
+      "vessels": 66
+    },
+    {
+      "op": "DPW",
+      "month": "2019-01",
+      "revenue": 13788500.14,
+      "teu": 116931,
+      "vessels": 65
+    },
+    {
+      "op": "DPW",
+      "month": "2019-02",
+      "revenue": 11940622.82,
+      "teu": 106242,
+      "vessels": 61
+    },
+    {
+      "op": "DPW",
+      "month": "2019-03",
+      "revenue": 12842876.98,
+      "teu": 112654,
+      "vessels": 66
+    },
+    {
+      "op": "DPW",
+      "month": "2019-04",
+      "revenue": 12690433.38,
+      "teu": 112068,
+      "vessels": 62
+    },
+    {
+      "op": "DPW",
+      "month": "2019-05",
+      "revenue": 12164101.87,
+      "teu": 104053,
+      "vessels": 57
+    },
+    {
+      "op": "DPW",
+      "month": "2019-06",
+      "revenue": 13913217.81,
+      "teu": 118108,
+      "vessels": 63
+    },
+    {
+      "op": "DPW",
+      "month": "2019-07",
+      "revenue": 13551261.2,
+      "teu": 118557,
+      "vessels": 58
+    },
+    {
+      "op": "DPW",
+      "month": "2019-08",
+      "revenue": 12004802.62,
+      "teu": 114618,
+      "vessels": 57
+    },
+    {
+      "op": "DPW",
+      "month": "2019-09",
+      "revenue": 12272684.93,
+      "teu": 112564,
+      "vessels": 57
+    },
+    {
+      "op": "DPW",
+      "month": "2019-10",
+      "revenue": 12293440.56,
+      "teu": 106098,
+      "vessels": 56
+    },
+    {
+      "op": "DPW",
+      "month": "2019-11",
+      "revenue": 12470341.3,
+      "teu": 109487,
+      "vessels": 55
+    },
+    {
+      "op": "DPW",
+      "month": "2019-12",
+      "revenue": 13803995.01,
+      "teu": 120267,
+      "vessels": 62
+    },
+    {
+      "op": "DPW",
+      "month": "2020-01",
+      "revenue": 12446942.71,
+      "teu": 106483,
+      "vessels": 54
+    },
+    {
+      "op": "DPW",
+      "month": "2020-02",
+      "revenue": 13405803.61,
+      "teu": 116679,
+      "vessels": 57
+    },
+    {
+      "op": "DPW",
+      "month": "2020-03",
+      "revenue": 10821514.44,
+      "teu": 99640,
+      "vessels": 51
+    },
+    {
+      "op": "DPW",
+      "month": "2020-04",
+      "revenue": 11462512.43,
+      "teu": 94121,
+      "vessels": 49
+    },
+    {
+      "op": "DPW",
+      "month": "2020-05",
+      "revenue": 12235169.48,
+      "teu": 101061,
+      "vessels": 56
+    },
+    {
+      "op": "DPW",
+      "month": "2020-06",
+      "revenue": 10425383.6,
+      "teu": 94101,
+      "vessels": 50
+    },
+    {
+      "op": "DPW",
+      "month": "2020-07",
+      "revenue": 12334005.31,
+      "teu": 111543,
+      "vessels": 51
+    },
+    {
+      "op": "DPW",
+      "month": "2020-08",
+      "revenue": 13358706.34,
+      "teu": 115307,
+      "vessels": 54
+    },
+    {
+      "op": "DPW",
+      "month": "2020-09",
+      "revenue": 12113593.2,
+      "teu": 110012,
+      "vessels": 50
+    },
+    {
+      "op": "DPW",
+      "month": "2020-10",
+      "revenue": 14174734.27,
+      "teu": 164612,
+      "vessels": 58
+    },
+    {
+      "op": "DPW",
+      "month": "2020-11",
+      "revenue": 13636846.91,
+      "teu": 126799,
+      "vessels": 60
+    },
+    {
+      "op": "DPW",
+      "month": "2020-12",
+      "revenue": 14212699.47,
+      "teu": 122741,
+      "vessels": 57
+    },
+    {
+      "op": "DPW",
+      "month": "2021-01",
+      "revenue": 14953727.02,
+      "teu": 125837,
+      "vessels": 62
+    },
+    {
+      "op": "DPW",
+      "month": "2021-02",
+      "revenue": 14174575.66,
+      "teu": 114199,
+      "vessels": 53
+    },
+    {
+      "op": "DPW",
+      "month": "2021-03",
+      "revenue": 15613711.18,
+      "teu": 126223,
+      "vessels": 63
+    },
+    {
+      "op": "DPW",
+      "month": "2021-04",
+      "revenue": 14313633.85,
+      "teu": 122242,
+      "vessels": 55
+    },
+    {
+      "op": "DPW",
+      "month": "2021-05",
+      "revenue": 15051017.1,
+      "teu": 130380,
+      "vessels": 54
+    },
+    {
+      "op": "DPW",
+      "month": "2021-06",
+      "revenue": 14366032.72,
+      "teu": 120577,
+      "vessels": 49
+    },
+    {
+      "op": "DPW",
+      "month": "2021-07",
+      "revenue": 15583563.0,
+      "teu": 128834,
+      "vessels": 55
+    },
+    {
+      "op": "DPW",
+      "month": "2021-08",
+      "revenue": 15191295.68,
+      "teu": 131979,
+      "vessels": 51
+    },
+    {
+      "op": "DPW",
+      "month": "2021-09",
+      "revenue": 13681016.44,
+      "teu": 109454,
+      "vessels": 47
+    },
+    {
+      "op": "DPW",
+      "month": "2021-10",
+      "revenue": 14774025.95,
+      "teu": 119595,
+      "vessels": 53
+    },
+    {
+      "op": "DPW",
+      "month": "2021-11",
+      "revenue": 13782992.76,
+      "teu": 112453,
+      "vessels": 51
+    },
+    {
+      "op": "DPW",
+      "month": "2021-12",
+      "revenue": 15800899.48,
+      "teu": 126108,
+      "vessels": 51
+    },
+    {
+      "op": "DPW",
+      "month": "2022-01",
+      "revenue": 14970995.55,
+      "teu": 115218,
+      "vessels": 50
+    },
+    {
+      "op": "DPW",
+      "month": "2022-02",
+      "revenue": 14121484.13,
+      "teu": 110339,
+      "vessels": 47
+    },
+    {
+      "op": "DPW",
+      "month": "2022-03",
+      "revenue": 14984890.92,
+      "teu": 123817,
+      "vessels": 50
+    },
+    {
+      "op": "DPW",
+      "month": "2022-04",
+      "revenue": 13207950.43,
+      "teu": 105771,
+      "vessels": 46
+    },
+    {
+      "op": "DPW",
+      "month": "2022-05",
+      "revenue": 14061894.5,
+      "teu": 115947,
+      "vessels": 50
+    },
+    {
+      "op": "DPW",
+      "month": "2022-06",
+      "revenue": 12388594.12,
+      "teu": 100506,
+      "vessels": 42
+    },
+    {
+      "op": "DPW",
+      "month": "2022-07",
+      "revenue": 16652605.58,
+      "teu": 132690,
+      "vessels": 57
+    },
+    {
+      "op": "DPW",
+      "month": "2022-08",
+      "revenue": 15175724.32,
+      "teu": 121369,
+      "vessels": 53
+    },
+    {
+      "op": "DPW",
+      "month": "2022-09",
+      "revenue": 15891595.82,
+      "teu": 125497,
+      "vessels": 53
+    },
+    {
+      "op": "DPW",
+      "month": "2022-10",
+      "revenue": 15270168.61,
+      "teu": 119526,
+      "vessels": 52
+    },
+    {
+      "op": "DPW",
+      "month": "2022-11",
+      "revenue": 15102197.22,
+      "teu": 122498,
+      "vessels": 53
+    },
+    {
+      "op": "DPW",
+      "month": "2022-12",
+      "revenue": 16307552.97,
+      "teu": 125360,
+      "vessels": 54
+    },
+    {
+      "op": "DPW",
+      "month": "2023-01",
+      "revenue": 13577891.46,
+      "teu": 105718,
+      "vessels": 53
+    },
+    {
+      "op": "DPW",
+      "month": "2023-02",
+      "revenue": 16154659.79,
+      "teu": 124814,
+      "vessels": 59
+    },
+    {
+      "op": "DPW",
+      "month": "2023-03",
+      "revenue": 15201400.3,
+      "teu": 120193,
+      "vessels": 58
+    },
+    {
+      "op": "DPW",
+      "month": "2023-04",
+      "revenue": 15037562.3,
+      "teu": 122160,
+      "vessels": 62
+    },
+    {
+      "op": "DPW",
+      "month": "2023-05",
+      "revenue": 16748669.57,
+      "teu": 137399,
+      "vessels": 72
+    },
+    {
+      "op": "DPW",
+      "month": "2023-06",
+      "revenue": 16191725.38,
+      "teu": 131777,
+      "vessels": 74
+    },
+    {
+      "op": "DPW",
+      "month": "2023-07",
+      "revenue": 17298402.22,
+      "teu": 143943,
+      "vessels": 73
+    },
+    {
+      "op": "DPW",
+      "month": "2023-08",
+      "revenue": 17411690.57,
+      "teu": 148864,
+      "vessels": 78
+    },
+    {
+      "op": "DPW",
+      "month": "2023-09",
+      "revenue": 17234594.3,
+      "teu": 134491,
+      "vessels": 73
+    },
+    {
+      "op": "DPW",
+      "month": "2023-10",
+      "revenue": 19231126.2,
+      "teu": 148630,
+      "vessels": 78
+    },
+    {
+      "op": "DPW",
+      "month": "2023-11",
+      "revenue": 16094023.26,
+      "teu": 129064,
+      "vessels": 73
+    },
+    {
+      "op": "DPW",
+      "month": "2023-12",
+      "revenue": 18615523.66,
+      "teu": 139412,
+      "vessels": 70
+    },
+    {
+      "op": "DPW",
+      "month": "2024-01",
+      "revenue": 18839361.64,
+      "teu": 146070,
+      "vessels": 71
+    },
+    {
+      "op": "DPW",
+      "month": "2024-02",
+      "revenue": 17838123.11,
+      "teu": 142092,
+      "vessels": 74
+    },
+    {
+      "op": "DPW",
+      "month": "2024-03",
+      "revenue": 18674725.98,
+      "teu": 145530,
+      "vessels": 77
+    },
+    {
+      "op": "DPW",
+      "month": "2024-04",
+      "revenue": 17994107.0,
+      "teu": 139498,
+      "vessels": 74
+    },
+    {
+      "op": "DPW",
+      "month": "2024-05",
+      "revenue": 20315521.97,
+      "teu": 166220,
+      "vessels": 85
+    },
+    {
+      "op": "DPW",
+      "month": "2024-06",
+      "revenue": 18697169.67,
+      "teu": 149218,
+      "vessels": 73
+    },
+    {
+      "op": "DPW",
+      "month": "2024-07",
+      "revenue": 20825899.26,
+      "teu": 155180,
+      "vessels": 72
+    },
+    {
+      "op": "DPW",
+      "month": "2024-08",
+      "revenue": 22401273.67,
+      "teu": 168544,
+      "vessels": 79
+    },
+    {
+      "op": "DPW",
+      "month": "2024-09",
+      "revenue": 22803592.98,
+      "teu": 162926,
+      "vessels": 74
+    },
+    {
+      "op": "DPW",
+      "month": "2024-10",
+      "revenue": 24142924.61,
+      "teu": 176143,
+      "vessels": 76
+    },
+    {
+      "op": "DPW",
+      "month": "2024-11",
+      "revenue": 26202653.79,
+      "teu": 177197,
+      "vessels": 77
+    },
+    {
+      "op": "DPW",
+      "month": "2024-12",
+      "revenue": 24659291.49,
+      "teu": 159715,
+      "vessels": 69
+    },
+    {
+      "op": "DPW",
+      "month": "2025-01",
+      "revenue": 27744433.95,
+      "teu": 170607,
+      "vessels": 76
+    },
+    {
+      "op": "DPW",
+      "month": "2025-02",
+      "revenue": 23594366.27,
+      "teu": 149531,
+      "vessels": 68
+    },
+    {
+      "op": "DPW",
+      "month": "2025-03",
+      "revenue": 24247171.04,
+      "teu": 176694,
+      "vessels": 82
+    },
+    {
+      "op": "DPW",
+      "month": "2025-04",
+      "revenue": 20545539.77,
+      "teu": 147520,
+      "vessels": 68
+    },
+    {
+      "op": "DPW",
+      "month": "2025-05",
+      "revenue": 24038524.81,
+      "teu": 172710,
+      "vessels": 82
+    },
+    {
+      "op": "DPW",
+      "month": "2025-06",
+      "revenue": 22701752.77,
+      "teu": 163470,
+      "vessels": 77
+    },
+    {
+      "op": "DPW",
+      "month": "2025-07",
+      "revenue": 23432263.8,
+      "teu": 166088,
+      "vessels": 76
+    },
+    {
+      "op": "DPW",
+      "month": "2025-08",
+      "revenue": 24748856.1,
+      "teu": 165086,
+      "vessels": 76
+    },
+    {
+      "op": "DPW",
+      "month": "2025-09",
+      "revenue": 25107723.04,
+      "teu": 153052,
+      "vessels": 72
+    },
+    {
+      "op": "DPW",
+      "month": "2025-10",
+      "revenue": 26331263.58,
+      "teu": 170630,
+      "vessels": 76
+    },
+    {
+      "op": "DPW",
+      "month": "2025-11",
+      "revenue": 24038319.45,
+      "teu": 157461,
+      "vessels": 72
+    },
+    {
+      "op": "DPW",
+      "month": "2025-12",
+      "revenue": 28524249.49,
+      "teu": 179805,
+      "vessels": 83
+    },
+    {
+      "op": "DPW",
+      "month": "2026-01",
+      "revenue": 26772459.14,
+      "teu": 170975,
+      "vessels": 81
+    },
+    {
+      "op": "DPW",
+      "month": "2026-02",
+      "revenue": 23688201.25,
+      "teu": 157980,
+      "vessels": 67
+    },
+    {
+      "op": "DPW",
+      "month": "2026-03",
+      "revenue": 27150576.77,
+      "teu": 175200,
+      "vessels": 74
+    },
+    {
+      "op": "DPW",
+      "month": "2026-04",
+      "revenue": 24933391.88,
+      "teu": 166596,
+      "vessels": 71
+    },
+    {
+      "op": "DPW",
+      "month": "2026-05",
+      "revenue": 28284397.09,
+      "teu": 182387,
+      "vessels": 79
+    },
+    {
+      "op": "DPW",
+      "month": "2026-06",
+      "revenue": 25469258.66,
+      "teu": 165192,
+      "vessels": 75
+    },
+    {
+      "op": "DPW",
+      "month": "2026-07",
+      "revenue": 29251804.06,
+      "teu": 107598,
+      "vessels": 80
+    },
+    {
+      "op": "PAITA",
+      "month": "2014-01",
+      "revenue": 3167780.97,
+      "teu": 20044,
+      "vessels": 40
+    },
+    {
+      "op": "PAITA",
+      "month": "2014-02",
+      "revenue": 2649080.79,
+      "teu": 16189,
+      "vessels": 43
+    },
+    {
+      "op": "PAITA",
+      "month": "2014-03",
+      "revenue": 2740755.75,
+      "teu": 15742,
+      "vessels": 48
+    },
+    {
+      "op": "PAITA",
+      "month": "2014-04",
+      "revenue": 1897188.37,
+      "teu": 11146,
+      "vessels": 40
+    },
+    {
+      "op": "PAITA",
+      "month": "2014-05",
+      "revenue": 2174036.54,
+      "teu": 13736,
+      "vessels": 46
+    },
+    {
+      "op": "PAITA",
+      "month": "2014-06",
+      "revenue": 2243545.42,
+      "teu": 14302,
+      "vessels": 43
+    },
+    {
+      "op": "PAITA",
+      "month": "2014-07",
+      "revenue": 1777398.94,
+      "teu": 10042,
+      "vessels": 33
+    },
+    {
+      "op": "PAITA",
+      "month": "2014-08",
+      "revenue": 2533887.04,
+      "teu": 13289,
+      "vessels": 42
+    },
+    {
+      "op": "PAITA",
+      "month": "2014-09",
+      "revenue": 2440785.95,
+      "teu": 13734,
+      "vessels": 40
+    },
+    {
+      "op": "PAITA",
+      "month": "2014-10",
+      "revenue": 2778325.82,
+      "teu": 16920,
+      "vessels": 41
+    },
+    {
+      "op": "PAITA",
+      "month": "2014-11",
+      "revenue": 3465097.04,
+      "teu": 24253,
+      "vessels": 48
+    },
+    {
+      "op": "PAITA",
+      "month": "2014-12",
+      "revenue": 3433317.5,
+      "teu": 23231,
+      "vessels": 50
+    },
+    {
+      "op": "PAITA",
+      "month": "2015-01",
+      "revenue": 2417571.87,
+      "teu": 16834,
+      "vessels": 47
+    },
+    {
+      "op": "PAITA",
+      "month": "2015-02",
+      "revenue": 2607881.46,
+      "teu": 18679,
+      "vessels": 36
+    },
+    {
+      "op": "PAITA",
+      "month": "2015-03",
+      "revenue": 2997726.3,
+      "teu": 16243,
+      "vessels": 45
+    },
+    {
+      "op": "PAITA",
+      "month": "2015-04",
+      "revenue": 2540730.04,
+      "teu": 12335,
+      "vessels": 33
+    },
+    {
+      "op": "PAITA",
+      "month": "2015-05",
+      "revenue": 3015277.1,
+      "teu": 15826,
+      "vessels": 43
+    },
+    {
+      "op": "PAITA",
+      "month": "2015-06",
+      "revenue": 2623238.49,
+      "teu": 15023,
+      "vessels": 36
+    },
+    {
+      "op": "PAITA",
+      "month": "2015-07",
+      "revenue": 2052401.69,
+      "teu": 13197,
+      "vessels": 35
+    },
+    {
+      "op": "PAITA",
+      "month": "2015-08",
+      "revenue": 1696778.2,
+      "teu": 10671,
+      "vessels": 38
+    },
+    {
+      "op": "PAITA",
+      "month": "2015-09",
+      "revenue": 2906471.58,
+      "teu": 16255,
+      "vessels": 39
+    },
+    {
+      "op": "PAITA",
+      "month": "2015-10",
+      "revenue": 3278267.08,
+      "teu": 22764,
+      "vessels": 34
+    },
+    {
+      "op": "PAITA",
+      "month": "2015-11",
+      "revenue": 4628044.34,
+      "teu": 27388,
+      "vessels": 54
+    },
+    {
+      "op": "PAITA",
+      "month": "2015-12",
+      "revenue": 4206526.0,
+      "teu": 25380,
+      "vessels": 57
+    },
+    {
+      "op": "PAITA",
+      "month": "2016-01",
+      "revenue": 3192627.22,
+      "teu": 19951,
+      "vessels": 40
+    },
+    {
+      "op": "PAITA",
+      "month": "2016-02",
+      "revenue": 2986037.92,
+      "teu": 14746,
+      "vessels": 44
+    },
+    {
+      "op": "PAITA",
+      "month": "2016-03",
+      "revenue": 1916599.94,
+      "teu": 11461,
+      "vessels": 35
+    },
+    {
+      "op": "PAITA",
+      "month": "2016-04",
+      "revenue": 1599283.55,
+      "teu": 10509,
+      "vessels": 29
+    },
+    {
+      "op": "PAITA",
+      "month": "2016-05",
+      "revenue": 2510246.48,
+      "teu": 17394,
+      "vessels": 33
+    },
+    {
+      "op": "PAITA",
+      "month": "2016-06",
+      "revenue": 2138766.89,
+      "teu": 11617,
+      "vessels": 37
+    },
+    {
+      "op": "PAITA",
+      "month": "2016-07",
+      "revenue": 2338443.47,
+      "teu": 12298,
+      "vessels": 38
+    },
+    {
+      "op": "PAITA",
+      "month": "2016-08",
+      "revenue": 2411361.73,
+      "teu": 13997,
+      "vessels": 31
+    },
+    {
+      "op": "PAITA",
+      "month": "2016-09",
+      "revenue": 3130589.0,
+      "teu": 18508,
+      "vessels": 38
+    },
+    {
+      "op": "PAITA",
+      "month": "2016-10",
+      "revenue": 3853831.36,
+      "teu": 22211,
+      "vessels": 44
+    },
+    {
+      "op": "PAITA",
+      "month": "2016-11",
+      "revenue": 4666399.94,
+      "teu": 27336,
+      "vessels": 60
+    },
+    {
+      "op": "PAITA",
+      "month": "2016-12",
+      "revenue": 5699779.68,
+      "teu": 35446,
+      "vessels": 64
+    },
+    {
+      "op": "PAITA",
+      "month": "2017-01",
+      "revenue": 4096152.99,
+      "teu": 28351,
+      "vessels": 55
+    },
+    {
+      "op": "PAITA",
+      "month": "2017-02",
+      "revenue": 3217229.45,
+      "teu": 19714,
+      "vessels": 37
+    },
+    {
+      "op": "PAITA",
+      "month": "2017-03",
+      "revenue": 2794466.3,
+      "teu": 17778,
+      "vessels": 40
+    },
+    {
+      "op": "PAITA",
+      "month": "2017-04",
+      "revenue": 2385340.52,
+      "teu": 13660,
+      "vessels": 35
+    },
+    {
+      "op": "PAITA",
+      "month": "2017-05",
+      "revenue": 2643798.04,
+      "teu": 16493,
+      "vessels": 34
+    },
+    {
+      "op": "PAITA",
+      "month": "2017-06",
+      "revenue": 2632581.09,
+      "teu": 16528,
+      "vessels": 34
+    },
+    {
+      "op": "PAITA",
+      "month": "2017-07",
+      "revenue": 2060361.03,
+      "teu": 13123,
+      "vessels": 26
+    },
+    {
+      "op": "PAITA",
+      "month": "2017-08",
+      "revenue": 2495775.45,
+      "teu": 16517,
+      "vessels": 38
+    },
+    {
+      "op": "PAITA",
+      "month": "2017-09",
+      "revenue": 1896404.37,
+      "teu": 13080,
+      "vessels": 26
+    },
+    {
+      "op": "PAITA",
+      "month": "2017-10",
+      "revenue": 3127741.0,
+      "teu": 19651,
+      "vessels": 40
+    },
+    {
+      "op": "PAITA",
+      "month": "2017-11",
+      "revenue": 3697828.76,
+      "teu": 23293,
+      "vessels": 48
+    },
+    {
+      "op": "PAITA",
+      "month": "2017-12",
+      "revenue": 4446493.07,
+      "teu": 25196,
+      "vessels": 56
+    },
+    {
+      "op": "PAITA",
+      "month": "2018-01",
+      "revenue": 4174738.41,
+      "teu": 27187,
+      "vessels": 47
+    },
+    {
+      "op": "PAITA",
+      "month": "2018-02",
+      "revenue": 3411904.28,
+      "teu": 21414,
+      "vessels": 45
+    },
+    {
+      "op": "PAITA",
+      "month": "2018-03",
+      "revenue": 2962922.51,
+      "teu": 18340,
+      "vessels": 33
+    },
+    {
+      "op": "PAITA",
+      "month": "2018-04",
+      "revenue": 2729562.36,
+      "teu": 17705,
+      "vessels": 28
+    },
+    {
+      "op": "PAITA",
+      "month": "2018-05",
+      "revenue": 4067386.38,
+      "teu": 22088,
+      "vessels": 34
+    },
+    {
+      "op": "PAITA",
+      "month": "2018-06",
+      "revenue": 3001107.31,
+      "teu": 23708,
+      "vessels": 32
+    },
+    {
+      "op": "PAITA",
+      "month": "2018-07",
+      "revenue": 4209733.9,
+      "teu": 20855,
+      "vessels": 40
+    },
+    {
+      "op": "PAITA",
+      "month": "2018-08",
+      "revenue": 3134418.36,
+      "teu": 18138,
+      "vessels": 34
+    },
+    {
+      "op": "PAITA",
+      "month": "2018-09",
+      "revenue": 2598506.64,
+      "teu": 14958,
+      "vessels": 31
+    },
+    {
+      "op": "PAITA",
+      "month": "2018-10",
+      "revenue": 3575788.91,
+      "teu": 23639,
+      "vessels": 35
+    },
+    {
+      "op": "PAITA",
+      "month": "2018-11",
+      "revenue": 4830987.26,
+      "teu": 31369,
+      "vessels": 43
+    },
+    {
+      "op": "PAITA",
+      "month": "2018-12",
+      "revenue": 5375203.03,
+      "teu": 31434,
+      "vessels": 44
+    },
+    {
+      "op": "PAITA",
+      "month": "2019-01",
+      "revenue": 5061003.59,
+      "teu": 31169,
+      "vessels": 41
+    },
+    {
+      "op": "PAITA",
+      "month": "2019-02",
+      "revenue": 3767948.22,
+      "teu": 21128,
+      "vessels": 36
+    },
+    {
+      "op": "PAITA",
+      "month": "2019-03",
+      "revenue": 3623551.15,
+      "teu": 23159,
+      "vessels": 34
+    },
+    {
+      "op": "PAITA",
+      "month": "2019-04",
+      "revenue": 4506219.19,
+      "teu": 23725,
+      "vessels": 40
+    },
+    {
+      "op": "PAITA",
+      "month": "2019-05",
+      "revenue": 3506775.64,
+      "teu": 17704,
+      "vessels": 33
+    },
+    {
+      "op": "PAITA",
+      "month": "2019-06",
+      "revenue": 3422869.77,
+      "teu": 19811,
+      "vessels": 33
+    },
+    {
+      "op": "PAITA",
+      "month": "2019-07",
+      "revenue": 2963558.66,
+      "teu": 19361,
+      "vessels": 40
+    },
+    {
+      "op": "PAITA",
+      "month": "2019-08",
+      "revenue": 3128080.79,
+      "teu": 15183,
+      "vessels": 40
+    },
+    {
+      "op": "PAITA",
+      "month": "2019-09",
+      "revenue": 3449343.76,
+      "teu": 20442,
+      "vessels": 40
+    },
+    {
+      "op": "PAITA",
+      "month": "2019-10",
+      "revenue": 4416791.07,
+      "teu": 30908,
+      "vessels": 42
+    },
+    {
+      "op": "PAITA",
+      "month": "2019-11",
+      "revenue": 6182625.19,
+      "teu": 34735,
+      "vessels": 49
+    },
+    {
+      "op": "PAITA",
+      "month": "2019-12",
+      "revenue": 6650689.12,
+      "teu": 39694,
+      "vessels": 53
+    },
+    {
+      "op": "PAITA",
+      "month": "2020-01",
+      "revenue": 6187380.41,
+      "teu": 34943,
+      "vessels": 58
+    },
+    {
+      "op": "PAITA",
+      "month": "2020-02",
+      "revenue": 4681797.15,
+      "teu": 24744,
+      "vessels": 54
+    },
+    {
+      "op": "PAITA",
+      "month": "2020-03",
+      "revenue": 3425392.79,
+      "teu": 16976,
+      "vessels": 50
+    },
+    {
+      "op": "PAITA",
+      "month": "2020-04",
+      "revenue": 3499402.79,
+      "teu": 17414,
+      "vessels": 48
+    },
+    {
+      "op": "PAITA",
+      "month": "2020-05",
+      "revenue": 3063861.18,
+      "teu": 18493,
+      "vessels": 30
+    },
+    {
+      "op": "PAITA",
+      "month": "2020-06",
+      "revenue": 2796770.43,
+      "teu": 16950,
+      "vessels": 28
+    },
+    {
+      "op": "PAITA",
+      "month": "2020-07",
+      "revenue": 4001923.85,
+      "teu": 20371,
+      "vessels": 41
+    },
+    {
+      "op": "PAITA",
+      "month": "2020-08",
+      "revenue": 5122522.3,
+      "teu": 27387,
+      "vessels": 38
+    },
+    {
+      "op": "PAITA",
+      "month": "2020-09",
+      "revenue": 4342499.29,
+      "teu": 26153,
+      "vessels": 42
+    },
+    {
+      "op": "PAITA",
+      "month": "2020-10",
+      "revenue": 6600500.92,
+      "teu": 37801,
+      "vessels": 48
+    },
+    {
+      "op": "PAITA",
+      "month": "2020-11",
+      "revenue": 7893719.6,
+      "teu": 43220,
+      "vessels": 48
+    },
+    {
+      "op": "PAITA",
+      "month": "2020-12",
+      "revenue": 8234025.57,
+      "teu": 44236,
+      "vessels": 54
+    },
+    {
+      "op": "PAITA",
+      "month": "2021-01",
+      "revenue": 6913975.48,
+      "teu": 36518,
+      "vessels": 46
+    },
+    {
+      "op": "PAITA",
+      "month": "2021-02",
+      "revenue": 4511735.0,
+      "teu": 25805,
+      "vessels": 37
+    },
+    {
+      "op": "PAITA",
+      "month": "2021-03",
+      "revenue": 3784763.0,
+      "teu": 18120,
+      "vessels": 34
+    },
+    {
+      "op": "PAITA",
+      "month": "2021-04",
+      "revenue": 3862532.03,
+      "teu": 20012,
+      "vessels": 31
+    },
+    {
+      "op": "PAITA",
+      "month": "2021-05",
+      "revenue": 4992019.48,
+      "teu": 18966,
+      "vessels": 35
+    },
+    {
+      "op": "PAITA",
+      "month": "2021-06",
+      "revenue": 4535155.89,
+      "teu": 23017,
+      "vessels": 30
+    },
+    {
+      "op": "PAITA",
+      "month": "2021-07",
+      "revenue": 5192026.08,
+      "teu": 27763,
+      "vessels": 41
+    },
+    {
+      "op": "PAITA",
+      "month": "2021-08",
+      "revenue": 4918351.36,
+      "teu": 22252,
+      "vessels": 37
+    },
+    {
+      "op": "PAITA",
+      "month": "2021-09",
+      "revenue": 5351624.24,
+      "teu": 25629,
+      "vessels": 42
+    },
+    {
+      "op": "PAITA",
+      "month": "2021-10",
+      "revenue": 5978407.8,
+      "teu": 29214,
+      "vessels": 40
+    },
+    {
+      "op": "PAITA",
+      "month": "2021-11",
+      "revenue": 7674541.89,
+      "teu": 39055,
+      "vessels": 44
+    },
+    {
+      "op": "PAITA",
+      "month": "2021-12",
+      "revenue": 8075602.89,
+      "teu": 42210,
+      "vessels": 48
+    },
+    {
+      "op": "PAITA",
+      "month": "2022-01",
+      "revenue": 6244367.32,
+      "teu": 32822,
+      "vessels": 42
+    },
+    {
+      "op": "PAITA",
+      "month": "2022-02",
+      "revenue": 4609632.64,
+      "teu": 23831,
+      "vessels": 34
+    },
+    {
+      "op": "PAITA",
+      "month": "2022-03",
+      "revenue": 4257966.0,
+      "teu": 19651,
+      "vessels": 38
+    },
+    {
+      "op": "PAITA",
+      "month": "2022-04",
+      "revenue": 3728260.01,
+      "teu": 17809,
+      "vessels": 35
+    },
+    {
+      "op": "PAITA",
+      "month": "2022-05",
+      "revenue": 4529304.0,
+      "teu": 21434,
+      "vessels": 37
+    },
+    {
+      "op": "PAITA",
+      "month": "2022-06",
+      "revenue": 4377403.6,
+      "teu": 20803,
+      "vessels": 42
+    },
+    {
+      "op": "PAITA",
+      "month": "2022-07",
+      "revenue": 5524288.97,
+      "teu": 26231,
+      "vessels": 43
+    },
+    {
+      "op": "PAITA",
+      "month": "2022-08",
+      "revenue": 5986122.53,
+      "teu": 27484,
+      "vessels": 46
+    },
+    {
+      "op": "PAITA",
+      "month": "2022-09",
+      "revenue": 6095701.94,
+      "teu": 28791,
+      "vessels": 46
+    },
+    {
+      "op": "PAITA",
+      "month": "2022-10",
+      "revenue": 7273971.47,
+      "teu": 34428,
+      "vessels": 44
+    },
+    {
+      "op": "PAITA",
+      "month": "2022-11",
+      "revenue": 9556058.83,
+      "teu": 45802,
+      "vessels": 55
+    },
+    {
+      "op": "PAITA",
+      "month": "2022-12",
+      "revenue": 11033213.2,
+      "teu": 52271,
+      "vessels": 61
+    },
+    {
+      "op": "PAITA",
+      "month": "2023-01",
+      "revenue": 8158110.35,
+      "teu": 36330,
+      "vessels": 50
+    },
+    {
+      "op": "PAITA",
+      "month": "2023-02",
+      "revenue": 6660840.5,
+      "teu": 29966,
+      "vessels": 44
+    },
+    {
+      "op": "PAITA",
+      "month": "2023-03",
+      "revenue": 5781942.0,
+      "teu": 28092,
+      "vessels": 39
+    },
+    {
+      "op": "PAITA",
+      "month": "2023-04",
+      "revenue": 4807097.65,
+      "teu": 21654,
+      "vessels": 34
+    },
+    {
+      "op": "PAITA",
+      "month": "2023-05",
+      "revenue": 4841854.61,
+      "teu": 24253,
+      "vessels": 37
+    },
+    {
+      "op": "PAITA",
+      "month": "2023-06",
+      "revenue": 5066702.44,
+      "teu": 24129,
+      "vessels": 40
+    },
+    {
+      "op": "PAITA",
+      "month": "2023-07",
+      "revenue": 4353524.88,
+      "teu": 20240,
+      "vessels": 37
+    },
+    {
+      "op": "PAITA",
+      "month": "2023-08",
+      "revenue": 4065734.11,
+      "teu": 16135,
+      "vessels": 44
+    },
+    {
+      "op": "PAITA",
+      "month": "2023-09",
+      "revenue": 4696202.64,
+      "teu": 20765,
+      "vessels": 33
+    },
+    {
+      "op": "PAITA",
+      "month": "2023-10",
+      "revenue": 8208254.05,
+      "teu": 36569,
+      "vessels": 55
+    },
+    {
+      "op": "PAITA",
+      "month": "2023-11",
+      "revenue": 8572256.37,
+      "teu": 37660,
+      "vessels": 59
+    },
+    {
+      "op": "PAITA",
+      "month": "2023-12",
+      "revenue": 5690702.3,
+      "teu": 23147,
+      "vessels": 58
+    },
+    {
+      "op": "PAITA",
+      "month": "2024-01",
+      "revenue": 5266745.76,
+      "teu": 19160,
+      "vessels": 52
+    },
+    {
+      "op": "PAITA",
+      "month": "2024-02",
+      "revenue": 4804172.38,
+      "teu": 17871,
+      "vessels": 45
+    },
+    {
+      "op": "PAITA",
+      "month": "2024-03",
+      "revenue": 3932071.82,
+      "teu": 14136,
+      "vessels": 40
+    },
+    {
+      "op": "PAITA",
+      "month": "2024-04",
+      "revenue": 3243547.48,
+      "teu": 13528,
+      "vessels": 32
+    },
+    {
+      "op": "PAITA",
+      "month": "2024-05",
+      "revenue": 3626275.5,
+      "teu": 16348,
+      "vessels": 44
+    },
+    {
+      "op": "PAITA",
+      "month": "2024-06",
+      "revenue": 4269068.82,
+      "teu": 16295,
+      "vessels": 42
+    },
+    {
+      "op": "PAITA",
+      "month": "2024-07",
+      "revenue": 5185412.2,
+      "teu": 23998,
+      "vessels": 43
+    },
+    {
+      "op": "PAITA",
+      "month": "2024-08",
+      "revenue": 4948181.46,
+      "teu": 19137,
+      "vessels": 50
+    },
+    {
+      "op": "PAITA",
+      "month": "2024-09",
+      "revenue": 5215551.63,
+      "teu": 22189,
+      "vessels": 46
+    },
+    {
+      "op": "PAITA",
+      "month": "2024-10",
+      "revenue": 8760242.96,
+      "teu": 35784,
+      "vessels": 55
+    },
+    {
+      "op": "PAITA",
+      "month": "2024-11",
+      "revenue": 12555566.09,
+      "teu": 54750,
+      "vessels": 57
+    },
+    {
+      "op": "PAITA",
+      "month": "2024-12",
+      "revenue": 11921197.42,
+      "teu": 49659,
+      "vessels": 56
+    },
+    {
+      "op": "PAITA",
+      "month": "2025-01",
+      "revenue": 7680258.74,
+      "teu": 28165,
+      "vessels": 54
+    },
+    {
+      "op": "PAITA",
+      "month": "2025-02",
+      "revenue": 5830012.23,
+      "teu": 21838,
+      "vessels": 43
+    },
+    {
+      "op": "PAITA",
+      "month": "2025-03",
+      "revenue": 4851467.86,
+      "teu": 18732,
+      "vessels": 46
+    },
+    {
+      "op": "PAITA",
+      "month": "2025-04",
+      "revenue": 5868328.85,
+      "teu": 23807,
+      "vessels": 43
+    },
+    {
+      "op": "PAITA",
+      "month": "2025-05",
+      "revenue": 7180338.21,
+      "teu": 26929,
+      "vessels": 50
+    },
+    {
+      "op": "PAITA",
+      "month": "2025-06",
+      "revenue": 7611387.08,
+      "teu": 30884,
+      "vessels": 54
+    },
+    {
+      "op": "PAITA",
+      "month": "2025-07",
+      "revenue": 8125392.68,
+      "teu": 31267,
+      "vessels": 55
+    },
+    {
+      "op": "PAITA",
+      "month": "2025-08",
+      "revenue": 7841973.59,
+      "teu": 33975,
+      "vessels": 50
+    },
+    {
+      "op": "PAITA",
+      "month": "2025-09",
+      "revenue": 8978139.39,
+      "teu": 35036,
+      "vessels": 59
+    },
+    {
+      "op": "PAITA",
+      "month": "2025-10",
+      "revenue": 11802687.13,
+      "teu": 44195,
+      "vessels": 62
+    },
+    {
+      "op": "PAITA",
+      "month": "2025-11",
+      "revenue": 15954774.64,
+      "teu": 58722,
+      "vessels": 78
+    },
+    {
+      "op": "PAITA",
+      "month": "2025-12",
+      "revenue": 13315068.86,
+      "teu": 49235,
+      "vessels": 75
+    },
+    {
+      "op": "PAITA",
+      "month": "2026-01",
+      "revenue": 8367467.29,
+      "teu": 29081,
+      "vessels": 58
+    },
+    {
+      "op": "PAITA",
+      "month": "2026-02",
+      "revenue": 7000544.83,
+      "teu": 27552,
+      "vessels": 50
+    },
+    {
+      "op": "PAITA",
+      "month": "2026-03",
+      "revenue": 5842416.92,
+      "teu": 21099,
+      "vessels": 48
+    },
+    {
+      "op": "PAITA",
+      "month": "2026-04",
+      "revenue": 7015283.79,
+      "teu": 22835,
+      "vessels": 56
+    },
+    {
+      "op": "PAITA",
+      "month": "2026-05",
+      "revenue": 8646028.62,
+      "teu": 30834,
+      "vessels": 58
+    },
+    {
+      "op": "PAITA",
+      "month": "2026-06",
+      "revenue": 8334485.31,
+      "teu": 30957,
+      "vessels": 50
+    },
+    {
+      "op": "PAITA",
+      "month": "2026-07",
+      "revenue": 7551307.27,
+      "teu": 30062,
+      "vessels": 52
+    }
+  ],
+  "coefficients": [
+    {
+      "variable": "C(op)[APM]:dln_teu",
+      "value": 0.207513367271,
+      "lo": 0.0345182689153,
+      "hi": 0.380508465628,
+      "p": 0.0190541517264
+    },
+    {
+      "variable": "C(op)[DPW]:dln_teu",
+      "value": 0.496040863424,
+      "lo": 0.07583219947,
+      "hi": 0.916249527378,
+      "p": 0.0210067580852
+    },
+    {
+      "variable": "C(op)[PAITA]:dln_teu",
+      "value": 0.657133851842,
+      "lo": 0.546843414437,
+      "hi": 0.767424289246,
+      "p": 4.9084765599400004e-23
+    },
+    {
+      "variable": "C(op)[APM]:dln_naves",
+      "value": 0.414020527274,
+      "lo": 0.249539948378,
+      "hi": 0.578501106171,
+      "p": 1.78603437122e-06
+    },
+    {
+      "variable": "C(op)[DPW]:dln_naves",
+      "value": 0.490554708385,
+      "lo": 0.0625361234035,
+      "hi": 0.918573293366,
+      "p": 0.0249721916876
+    },
+    {
+      "variable": "C(op)[PAITA]:dln_naves",
+      "value": 0.444064162835,
+      "lo": 0.297697594452,
+      "hi": 0.590430731219,
+      "p": 1.47088031445e-08
+    },
+    {
+      "variable": "post_APM",
+      "value": 0.0202729404708,
+      "lo": -0.0412336809963,
+      "hi": 0.0817795619378,
+      "p": 0.515852582242
+    },
+    {
+      "variable": "post_DPW",
+      "value": 0.0348253808186,
+      "lo": -0.0426281875145,
+      "hi": 0.112278949152,
+      "p": 0.375718379072
+    }
+  ]
+}

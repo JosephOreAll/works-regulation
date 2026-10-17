@@ -1,0 +1,99 @@
+quarter_original,codigo,plsci,periodo,puerto,pais,tau,ln_plsci,chancay_post,fuente
+2025Q01,CLANF,42.34588,2025T1,Antofagasta,Chile,-3,3.745871131831968,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q02,CLANF,42.34588,2025T2,Antofagasta,Chile,-2,3.745871131831968,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q03,CLANF,42.3214,2025T3,Antofagasta,Chile,-1,3.745292868288314,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q04,CLANF,42.3214,2025T4,Antofagasta,Chile,0,3.745292868288314,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q01,CLANF,42.26766,2026T1,Antofagasta,Chile,1,3.744022254636145,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q02,CLANF,42.87558,2026T2,Antofagasta,Chile,2,3.7583024330913983,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q03,CLANF,42.82315,2026T3,Antofagasta,Chile,3,3.757078844211111,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q01,CLARI,62.94529,2025T1,Arica,Chile,-3,4.142265936404368,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q02,CLARI,66.24805,2025T2,Arica,Chile,-2,4.19340603047088,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q03,CLARI,66.22356,2025T3,Arica,Chile,-1,4.193036290867368,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q04,CLARI,99.94581,2025T4,Arica,Chile,0,4.604628139107221,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q01,CLARI,92.35635,2026T1,Arica,Chile,1,4.525654464432975,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q02,CLARI,85.62104,2026T2,Arica,Chile,2,4.449931047337727,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q03,CLARI,83.6685,2026T3,Arica,Chile,3,4.4268625625742,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q01,CLCNL,106.00462,2025T1,Coronel,Chile,-3,4.6634826780679335,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q02,CLCNL,105.92892,2025T2,Coronel,Chile,-2,4.662768303144366,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q03,CLCNL,104.62216,2025T3,Coronel,Chile,-1,4.6503553838773,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q04,CLCNL,106.0407,2025T4,Coronel,Chile,0,4.663822982681571,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q01,CLCNL,100.37825,2026T1,Coronel,Chile,1,4.6089455503230745,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q02,CLCNL,100.49457,2026T2,Coronel,Chile,2,4.610103696188719,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q03,CLCNL,99.75556,2026T3,Coronel,Chile,3,4.602722793564964,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q01,CLIQQ,108.97235,2025T1,Iquique,Chile,-3,4.691094180324766,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q02,CLIQQ,114.08215,2025T2,Iquique,Chile,-2,4.736918802911957,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q03,CLIQQ,114.25834,2025T3,Iquique,Chile,-1,4.73846202492192,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q04,CLIQQ,123.11729,2025T4,Iquique,Chile,0,4.813137478242243,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q01,CLIQQ,116.01471,2026T1,Iquique,Chile,1,4.75371699341144,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q02,CLIQQ,116.25158,2026T2,Iquique,Chile,2,4.755756635772953,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q03,CLIQQ,117.09574,2026T3,Iquique,Chile,3,4.762991890778825,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q01,CLPAG,101.31292,2025T1,Puerto Angamos,Chile,-3,4.618213945076445,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q02,CLPAG,102.8483,2025T2,Puerto Angamos,Chile,-2,4.633255087036742,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q03,CLPAG,103.0245,2025T3,Puerto Angamos,Chile,-1,4.634966824022131,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q04,CLPAG,103.13879,2025T4,Puerto Angamos,Chile,0,4.636075556927082,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q01,CLPAG,93.62809,2026T1,Puerto Angamos,Chile,1,4.539330445298104,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q02,CLPAG,93.62809,2026T2,Puerto Angamos,Chile,2,4.539330445298104,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q03,CLPAG,93.62809,2026T3,Puerto Angamos,Chile,3,4.539330445298104,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q01,CLSAI,185.76092,2025T1,San Antonio,Chile,-3,5.224460470564363,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q02,CLSAI,208.42849,2025T2,San Antonio,Chile,-2,5.339596008788849,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q03,CLSAI,214.61451,2025T3,San Antonio,Chile,-1,5.368843442076753,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q04,CLSAI,222.74925,2025T4,San Antonio,Chile,0,5.406046699341883,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q01,CLSAI,222.1058,2026T1,San Antonio,Chile,1,5.403153844922307,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q02,CLSAI,218.54875,2026T2,San Antonio,Chile,2,5.3870091017779815,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q03,CLSAI,220.58062,2026T3,San Antonio,Chile,3,5.396263251645653,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q01,CLSVE,97.47209,2025T1,San Vicente,Chile,-3,4.579566080614359,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q02,CLSVE,99.27913,2025T2,San Vicente,Chile,-2,4.597935377763677,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q03,CLSVE,99.43084,2025T3,San Vicente,Chile,-1,4.5994623271107775,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q04,CLSVE,99.54513,2025T4,San Vicente,Chile,0,4.600611109172943,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q01,CLSVE,99.49139,2026T1,San Vicente,Chile,1,4.600071107757064,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q02,CLSVE,99.55426,2026T2,San Vicente,Chile,2,4.600702822161179,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q03,CLSVE,100.1381,2026T3,San Vicente,Chile,3,4.606550233284612,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q01,CLVAP,142.77479,2025T1,Valparaíso,Chile,-3,4.961268493704108,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q02,CLVAP,127.01495,2025T2,Valparaíso,Chile,-2,4.844304796065977,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q03,CLVAP,126.30487,2025T3,Valparaíso,Chile,-1,4.838698587599607,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q04,CLVAP,127.67326,2025T4,Valparaíso,Chile,0,4.8494743440876,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q01,CLVAP,132.03976,2026T1,Valparaíso,Chile,1,4.88310308935232,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q02,CLVAP,132.12642,2026T2,Valparaíso,Chile,2,4.883759191530946,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q03,CLVAP,126.03296,2026T3,Valparaíso,Chile,3,4.836543460045073,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q01,COBUN,236.78226,2025T1,Buenaventura,Colombia,-3,5.467140984663001,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q02,COBUN,248.06425,2025T2,Buenaventura,Colombia,-2,5.513687785192121,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q03,COBUN,245.77805,2025T3,Buenaventura,Colombia,-1,5.5044288929003296,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q04,COBUN,243.42746,2025T4,Buenaventura,Colombia,0,5.4948189925958255,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q01,COBUN,235.07157,2026T1,Buenaventura,Colombia,1,5.459890020968739,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q02,COBUN,217.47974,2026T2,Buenaventura,Colombia,2,5.382105696764774,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q03,COBUN,229.90373,2026T3,Buenaventura,Colombia,3,5.437660656082932,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q01,ECGYE,229.66654,2025T1,Guayaquil,Ecuador,-3,5.436628430821449,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q02,ECGYE,230.39835,2025T2,Guayaquil,Ecuador,-2,5.439809767337759,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q03,ECGYE,230.0444,2025T3,Guayaquil,Ecuador,-1,5.4382723337709615,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q04,ECGYE,227.7098,2025T4,Guayaquil,Ecuador,0,5.428072011230056,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q01,ECGYE,218.86166,2026T1,Guayaquil,Ecuador,1,5.388439840718912,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q02,ECGYE,224.79203,2026T2,Guayaquil,Ecuador,2,5.415175663654383,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q03,ECGYE,220.06421,2026T3,Guayaquil,Ecuador,3,5.39391936740482,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q01,ECPBO,79.37486,2025T1,Puerto Bolívar,Ecuador,-3,4.3741816934317725,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q02,ECPBO,84.90881,2025T2,Puerto Bolívar,Ecuador,-2,4.441577857073821,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q03,ECPBO,79.41416,2025T3,Puerto Bolívar,Ecuador,-1,4.374676689884329,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q04,ECPBO,79.41416,2025T4,Puerto Bolívar,Ecuador,0,4.374676689884329,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q01,ECPBO,77.81862,2026T1,Puerto Bolívar,Ecuador,1,4.35438073416864,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q02,ECPBO,78.53947,2026T2,Puerto Bolívar,Ecuador,2,4.363601300973287,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q03,ECPBO,79.5565,2026T3,Puerto Bolívar,Ecuador,3,4.37646746106234,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q01,PECHY,70.37477,2025T1,Chancay,Perú,-3,4.253834818248475,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q02,PECHY,77.72427,2025T2,Chancay,Perú,-2,4.353167563813224,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q03,PECHY,88.71837,2025T3,Chancay,Perú,-1,4.485466970465763,1,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q04,PECHY,90.10217,2025T4,Chancay,Perú,0,4.50094424867499,1,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q01,PECHY,93.73408,2026T1,Chancay,Perú,1,4.54046183709727,1,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q02,PECHY,111.94768,2026T2,Chancay,Perú,2,4.718031619292735,1,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q03,PECHY,119.07911,2026T3,Chancay,Perú,3,4.779788062152565,1,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q01,PECLL,280.72385,2025T1,Callao,Perú,-3,5.637371445914456,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q02,PECLL,286.80025,2025T2,Callao,Perú,-2,5.658785980412673,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q03,PECLL,287.26339,2025T3,Callao,Perú,-1,5.660399530089791,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q04,PECLL,296.99374,2025T4,Callao,Perú,0,5.693711061139489,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q01,PECLL,288.24529,2026T1,Callao,Perú,1,5.663811819033016,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q02,PECLL,302.29587,2026T2,Callao,Perú,2,5.711406239766848,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q03,PECLL,305.32974,2026T3,Callao,Perú,3,5.721392307377819,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q01,PEPAI,118.11308,2025T1,Paita,Perú,-3,4.771642470669235,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q02,PEPAI,123.35864,2025T2,Paita,Perú,-2,4.815095885110927,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q03,PEPAI,114.98518,2025T3,Paita,Perú,-1,4.744803250493637,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2025Q04,PEPAI,115.03145,2025T4,Paita,Perú,0,4.745205569235757,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q01,PEPAI,139.04089,2026T1,Paita,Perú,1,4.934768062532268,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q02,PEPAI,138.29153,2026T2,Paita,Perú,2,4.929363993122068,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI
+2026Q03,PEPAI,146.70134,2026T3,Paita,Perú,3,4.98839881939488,0,https://unctadstat.unctad.org/datacentre/reportInfo/US.PLSCI

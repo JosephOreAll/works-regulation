@@ -1,0 +1,15 @@
+codigo_puerto,nombre_corto,pais,latitud,longitud,tipo_coordenada,fuente_url
+PECHY,Chancay,PERU,-11.56667,-77.26667,UN/LOCODE location,https://unlocode.info/PECHY
+PECLL,Callao,PERU,-12.05,-77.13333,UN/LOCODE location,https://unlocode.info/PECLL
+PEPAI,Paita,PERU,-5.076666666666666,-81.10499999999999,Puerto Paita official operator,https://www.puertopaita.com/infraestructura/
+CLANF,Antofagasta,CHILE,-23.65,-70.40694444444445,World Port Index via Wikidata,https://www.wikidata.org/wiki/Q111386978
+CLARI,Arica,CHILE,-18.48333,-70.31667,UN/LOCODE location,https://unlocode.info/CLARI
+CLCNL,Coronel,CHILE,-37.01667,-73.15,UN/LOCODE location,https://unlocode.info/CLCNL
+CLIQQ,Iquique,CHILE,-20.21667,-70.13333,UN/LOCODE location,https://unlocode.info/CLIQQ
+CLPAG,Puerto Angamos,CHILE,-23.08668,-70.41206,GeoNames port location,https://www.geonames.org/11550061/puerto-angamos.html
+CLSAI,San Antonio,CHILE,-33.6,-71.6,UN/LOCODE location,https://unlocode.info/CLSAI
+CLSVE,San Vicente,CHILE,-36.7,-73.13333,UN/LOCODE location,https://unlocode.info/CLSVE
+CLVAP,Valparaiso,CHILE,-33.03333,-71.63333,UN/LOCODE location,https://unlocode.info/CLVAP
+COBUN,Buenaventura,COLOMBIA,3.88333,-77.06667,WPI port via Incodocs,https://incodocs.com/ports/co/sea-port/cobun
+ECGYE,Guayaquil,ECUADOR,-2.16667,-79.9,UN/LOCODE location,https://unlocode.info/ECGYE
+ECPBO,Puerto Bolivar,ECUADOR,-3.265277777777778,-80.00027777777778,Puerto Bolivar port authority,https://www.puertobolivar.gob.ec/la-institucion/ubicacion/

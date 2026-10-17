@@ -1,0 +1,12 @@
+{
+  "name": "joseph-oreall-research-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Interactive research portfolio with spatial analysis and reproducible notebooks.",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "python -m http.server 8000 --directory public",
+    "check": "tsc --noEmit -p tsconfig.json"
+  }
+}

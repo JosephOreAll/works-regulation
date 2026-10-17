@@ -1,0 +1,294 @@
+{
+  "source": "UNCTAD PLSCI, 2025T1-2026T3",
+  "quarters": [
+    "2025T1",
+    "2025T2",
+    "2025T3",
+    "2025T4",
+    "2026T1",
+    "2026T2",
+    "2026T3"
+  ],
+  "ports": [
+    {
+      "code": "PECHY",
+      "name": "Chancay",
+      "country": "Peru",
+      "lat": -11.56667,
+      "lon": -77.26667,
+      "locationSource": "https://unlocode.info/PECHY",
+      "quarterValues": {
+        "2025T1": 70.37477,
+        "2025T2": 77.72427,
+        "2025T3": 88.71837,
+        "2025T4": 90.10217,
+        "2026T1": 93.73408,
+        "2026T2": 111.94768,
+        "2026T3": 119.07911
+      },
+      "start": 70.375,
+      "end": 119.079,
+      "relativeTrend": 7.411
+    },
+    {
+      "code": "PECLL",
+      "name": "Callao",
+      "country": "Peru",
+      "lat": -12.05,
+      "lon": -77.13333,
+      "locationSource": "https://unlocode.info/PECLL",
+      "quarterValues": {
+        "2025T1": 280.72385,
+        "2025T2": 286.80025,
+        "2025T3": 287.26339,
+        "2025T4": 296.99374,
+        "2026T1": 288.24529,
+        "2026T2": 302.29587,
+        "2026T3": 305.32974
+      },
+      "start": 280.724,
+      "end": 305.33,
+      "relativeTrend": 0.0
+    },
+    {
+      "code": "PEPAI",
+      "name": "Paita",
+      "country": "Peru",
+      "lat": -5.076666666666666,
+      "lon": -81.10499999999999,
+      "locationSource": "https://www.puertopaita.com/infraestructura/",
+      "quarterValues": {
+        "2025T1": 118.11308,
+        "2025T2": 123.35864,
+        "2025T3": 114.98518,
+        "2025T4": 115.03145,
+        "2026T1": 139.04089,
+        "2026T2": 138.29153,
+        "2026T3": 146.70134
+      },
+      "start": 118.113,
+      "end": 146.701,
+      "relativeTrend": 2.561
+    },
+    {
+      "code": "CLANF",
+      "name": "Antofagasta",
+      "country": "Chile",
+      "lat": -23.65,
+      "lon": -70.40694444444445,
+      "locationSource": "https://www.wikidata.org/wiki/Q111386978",
+      "quarterValues": {
+        "2025T1": 42.34588,
+        "2025T2": 42.34588,
+        "2025T3": 42.3214,
+        "2025T4": 42.3214,
+        "2026T1": 42.26766,
+        "2026T2": 42.87558,
+        "2026T3": 42.82315
+      },
+      "start": 42.346,
+      "end": 42.823,
+      "relativeTrend": -1.078
+    },
+    {
+      "code": "CLARI",
+      "name": "Arica",
+      "country": "Chile",
+      "lat": -18.48333,
+      "lon": -70.31667,
+      "locationSource": "https://unlocode.info/CLARI",
+      "quarterValues": {
+        "2025T1": 62.94529,
+        "2025T2": 66.24805,
+        "2025T3": 66.22356,
+        "2025T4": 99.94581,
+        "2026T1": 92.35635,
+        "2026T2": 85.62104,
+        "2026T3": 83.6685
+      },
+      "start": 62.945,
+      "end": 83.668,
+      "relativeTrend": 4.897
+    },
+    {
+      "code": "CLCNL",
+      "name": "Coronel",
+      "country": "Chile",
+      "lat": -37.01667,
+      "lon": -73.15,
+      "locationSource": "https://unlocode.info/CLCNL",
+      "quarterValues": {
+        "2025T1": 106.00462,
+        "2025T2": 105.92892,
+        "2025T3": 104.62216,
+        "2025T4": 106.0407,
+        "2026T1": 100.37825,
+        "2026T2": 100.49457,
+        "2026T3": 99.75556
+      },
+      "start": 106.005,
+      "end": 99.756,
+      "relativeTrend": -2.433
+    },
+    {
+      "code": "CLIQQ",
+      "name": "Iquique",
+      "country": "Chile",
+      "lat": -20.21667,
+      "lon": -70.13333,
+      "locationSource": "https://unlocode.info/CLIQQ",
+      "quarterValues": {
+        "2025T1": 108.97235,
+        "2025T2": 114.08215,
+        "2025T3": 114.25834,
+        "2025T4": 123.11729,
+        "2026T1": 116.01471,
+        "2026T2": 116.25158,
+        "2026T3": 117.09574
+      },
+      "start": 108.972,
+      "end": 117.096,
+      "relativeTrend": -0.328
+    },
+    {
+      "code": "CLPAG",
+      "name": "Puerto Angamos",
+      "country": "Chile",
+      "lat": -23.08668,
+      "lon": -70.41206,
+      "locationSource": "https://www.geonames.org/11550061/puerto-angamos.html",
+      "quarterValues": {
+        "2025T1": 101.31292,
+        "2025T2": 102.8483,
+        "2025T3": 103.0245,
+        "2025T4": 103.13879,
+        "2026T1": 93.62809,
+        "2026T2": 93.62809,
+        "2026T3": 93.62809
+      },
+      "start": 101.313,
+      "end": 93.628,
+      "relativeTrend": -3.097
+    },
+    {
+      "code": "CLSAI",
+      "name": "San Antonio",
+      "country": "Chile",
+      "lat": -33.6,
+      "lon": -71.6,
+      "locationSource": "https://unlocode.info/CLSAI",
+      "quarterValues": {
+        "2025T1": 185.76092,
+        "2025T2": 208.42849,
+        "2025T3": 214.61451,
+        "2025T4": 222.74925,
+        "2026T1": 222.1058,
+        "2026T2": 218.54875,
+        "2026T3": 220.58062
+      },
+      "start": 185.761,
+      "end": 220.581,
+      "relativeTrend": 1.019
+    },
+    {
+      "code": "CLSVE",
+      "name": "San Vicente",
+      "country": "Chile",
+      "lat": -36.7,
+      "lon": -73.13333,
+      "locationSource": "https://unlocode.info/CLSVE",
+      "quarterValues": {
+        "2025T1": 97.47209,
+        "2025T2": 99.27913,
+        "2025T3": 99.43084,
+        "2025T4": 99.54513,
+        "2026T1": 99.49139,
+        "2026T2": 99.55426,
+        "2026T3": 100.1381
+      },
+      "start": 97.472,
+      "end": 100.138,
+      "relativeTrend": -0.972
+    },
+    {
+      "code": "CLVAP",
+      "name": "Valparaiso",
+      "country": "Chile",
+      "lat": -33.03333,
+      "lon": -71.63333,
+      "locationSource": "https://unlocode.info/CLVAP",
+      "quarterValues": {
+        "2025T1": 142.77479,
+        "2025T2": 127.01495,
+        "2025T3": 126.30487,
+        "2025T4": 127.67326,
+        "2026T1": 132.03976,
+        "2026T2": 132.12642,
+        "2026T3": 126.03296
+      },
+      "start": 142.775,
+      "end": 126.033,
+      "relativeTrend": -2.161
+    },
+    {
+      "code": "COBUN",
+      "name": "Buenaventura",
+      "country": "Colombia",
+      "lat": 3.88333,
+      "lon": -77.06667,
+      "locationSource": "https://incodocs.com/ports/co/sea-port/cobun",
+      "quarterValues": {
+        "2025T1": 236.78226,
+        "2025T2": 248.06425,
+        "2025T3": 245.77805,
+        "2025T4": 243.42746,
+        "2026T1": 235.07157,
+        "2026T2": 217.47974,
+        "2026T3": 229.90373
+      },
+      "start": 236.782,
+      "end": 229.904,
+      "relativeTrend": -2.667
+    },
+    {
+      "code": "ECGYE",
+      "name": "Guayaquil",
+      "country": "Ecuador",
+      "lat": -2.16667,
+      "lon": -79.9,
+      "locationSource": "https://unlocode.info/ECGYE",
+      "quarterValues": {
+        "2025T1": 229.66654,
+        "2025T2": 230.39835,
+        "2025T3": 230.0444,
+        "2025T4": 227.7098,
+        "2026T1": 218.86166,
+        "2026T2": 224.79203,
+        "2026T3": 220.06421
+      },
+      "start": 229.667,
+      "end": 220.064,
+      "relativeTrend": -2.078
+    },
+    {
+      "code": "ECPBO",
+      "name": "Puerto Bolivar",
+      "country": "Ecuador",
+      "lat": -3.265277777777778,
+      "lon": -80.00027777777778,
+      "locationSource": "https://www.puertobolivar.gob.ec/la-institucion/ubicacion/",
+      "quarterValues": {
+        "2025T1": 79.37486,
+        "2025T2": 84.90881,
+        "2025T3": 79.41416,
+        "2025T4": 79.41416,
+        "2026T1": 77.81862,
+        "2026T2": 78.53947,
+        "2026T3": 79.5565
+      },
+      "start": 79.375,
+      "end": 79.556,
+      "relativeTrend": -1.875
+    }
+  ]
+}

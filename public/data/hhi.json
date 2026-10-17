@@ -1,0 +1,31 @@
+{
+  "source": "Articulo HHI, comparacion junio-octubre 2024/2025; datos preparados a partir de APN",
+  "compare": [
+    {
+      "period": "Jun-Oct 2024",
+      "hhi": 5410.5
+    },
+    {
+      "period": "Jun-Oct 2025",
+      "hhi": 4392.6
+    }
+  ],
+  "decomposition": [
+    {
+      "name": "Cuota de Chancay",
+      "pct": 87.4
+    },
+    {
+      "name": "Reparto interno de Callao",
+      "pct": 12.6
+    }
+  ],
+  "shapleyEntry": 86.0,
+  "ar2": -752.1,
+  "lo95": -1083.0,
+  "hi95": -421.3,
+  "normalized": [
+    0.082,
+    0.159
+  ]
+}
