@@ -1,4 +1,4 @@
-name: Publicar Research Workspace
+name: Publicar Research Works
 on:
   push:
     branches:

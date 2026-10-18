@@ -42,7 +42,7 @@ const shorten = (s, n = 190) => s.length > n ? s.slice(0, n).replace(/\s+\S*$/, 
 const docUrl = (p) => p.replace(/^\//, './');
 const link = (path, label, cls = '') => `<a class="${cls}" href="${esc(path)}" ${/^https?:/.test(path) ? 'target="_blank" rel="noopener noreferrer"' : ''}>${label}${ico('external', 14)}</a>`;
 const ui = document.getElementById('app');
-const S = { project: null, view: 'home', chapter: 'introduccion', country: '', port: 'PECHY', quarter: '2026T3', operator: 'APM', metric: 'revenue', hhiType: 'hhi', search: '', openLit: '', litTab: 'resumen', nbShow: 10, nbOpen: -1, wheelOpen: true, mapRect: null, collapsed: false, secureId: '', secureKind: 'original', compare: 'PECLL' };
+const S = { project: null, view: 'home', chapter: 'introduccion', country: '', port: 'PECHY', quarter: '2026T3', operator: 'APM', metric: 'revenue', hhiType: 'hhi', search: '', openLit: '', litTab: 'resumen', nbShow: 10, nbOpen: -1, wheelOpen: true, mapRect: null, collapsed: false, secureId: '', secureKind: 'original', compare: 'PECLL', baseMap: 'satellite' };
 const MAP = {
     pacifico: { x: -92, y: -11, w: 69, h: 77 },
     hhi: { x: -79, y: 8.2, w: 6.4, h: 8.4 },
@@ -61,13 +61,13 @@ const SJR = {
     'geojournal': { q: 'Q2', link: 'https://www.scimagojr.com/journalsearch.php?q=28772&tip=sid' },
     'journal of shipping and trade': { q: 'Q2', link: 'https://www.scimagojr.com/journalsearch.php?q=21101192304&tip=sid' }
 };
-const projectEntries = ['hhi', 'pacifico', 'peru'];
-function header() { return `<header class="site-head"><a href="#/" class="site-name" aria-label="Research Workspace">Research Workspace</a><span class="head-stroke" aria-hidden="true"></span></header>`; }
-function footer() { return `<footer class="footer"><img src="./assets/branding/signature.png" alt="Firma" loading="lazy"/></footer>`; }
-function home() { return `<main class="home-shell"><section class="research-gallery" aria-label="Elegir una investigaci\u00f3n">${projectEntries.map((id, i) => `<a class="photo-card photo-${id}" href="#/investigacion/${id}/mapa" style="--delay:${i * 100}ms" aria-label="${esc(P[id].title)}"><img src="./assets/photography/${id}.webp" alt="Fotograf\u00eda portuaria"/><span class="photo-shade"></span><span class="photo-information"><strong>${esc(P[id].title)}</strong><span class="photo-cta">${ico('arrow', 19)}</span></span></a>`).join('')}</section></main>`; }
+const projectEntries = ['pacifico', 'hhi', 'peru'];
+function header() { const inner = S.view === 'home' ? '' : '<a class="compact-brand" href="#/">Research Works</a>'; return `<header class="editorial-top"><a href="#/" class="top-signature" title="Research Works"><img src="./assets/branding/signature.png" alt="" /></a>${inner}<nav class="site-nav"><a href="#/" class="nav-home">Home</a><span class="nav-divider" aria-hidden="true"></span><button type="button" data-about>About us</button></nav></header>`; }
+function footer() { return `<footer class="site-footer"><img src="./assets/branding/signature.png" alt="" loading="lazy"/></footer>`; }
+function home() { return `<main class="home-shell"><h1 class="works-title">Research Works</h1><section class="research-gallery" aria-label="Investigaciones">${projectEntries.map((id, i) => `<a class="photo-card photo-${id}" href="#/investigacion/${id}/mapa" style="--delay:${i * 110}ms" aria-label="${esc(P[id].title)}"><div class="photo-window"><img src="./assets/photography/${id}.webp" alt="Vista de una terminal portuaria" loading="${i === 0 ? 'eager' : 'lazy'}"/></div><div class="photo-information"><strong>${esc(P[id].title)}</strong><span class="photo-cta" aria-hidden="true">${ico('arrow', 22)}</span></div></a>`).join('')}</section></main>`; }
 function anchorTo(page, view, section) { return `#/investigacion/${page}/${view}${section ? '/' + section : ''}`; }
 function locationLink(id) { return `<a class="subtle-link" target="_blank" rel="noopener noreferrer" href="${P[id].repo}">Repositorio ${ico('external', 14)}</a>`; }
-function dashHeader(id) { return `<div class="dash-heading"><a class="back-link" href="#/">${ico('back', 16)} Investigaciones</a><h1>${esc(P[id].title)}</h1></div>`; }
+function dashHeader(id) { return `<div class="dash-heading"><a class="back-link" href="#/">${ico('back', 16)} Research Works</a><h1>${esc(P[id].title)}</h1></div>`; }
 function dashFooter(id) { return `<div class="dash-bottom"><a href="${anchorTo(id, 'estudio', 'introduccion')}" class="primary-link">Ver investigaci\u00f3n ${ico('arrow', 18)}</a>${locationLink(id)}</div>`; }
 function mapPorts(id) { return id === 'pacifico' ? DATA.ports.ports.map(p => ({ ...p, operators: [] })) : GEO_PORTS.filter(p => id === 'hhi' ? p.code.startsWith('HHI') : p.code.startsWith('PER')); }
 function mapRectFor(id) { return S.mapRect || MAP[id]; }
@@ -79,7 +79,8 @@ function mapMarkers(id, rect) {
         return `<g class="map-marker ${selected ? 'chosen' : ''} ${dim ? 'dimmed' : ''}" data-port="${esc(p.code)}" role="button" tabindex="0" aria-label="Puerto ${esc(p.name)}"><circle cx="${p.lon}" cy="${-p.lat}" r="${r * 1.78}" class="halo"/><circle cx="${p.lon}" cy="${-p.lat}" r="${r}" class="dot"/><title>${esc(p.name)}</title></g>`;
     }).join('');
 }
-function mapMarkup(id) { const rect = mapRectFor(id), countries = DATA.countries.countries; return `<div class="geo-shell"><div id="leaflet-map" class="leaflet-map" aria-label="Mapa navegable"></div><div class="geo-toolbar"><button data-map-reset title="Ver mapa completo" aria-label="Ver mapa completo">${ico('reset', 17)}</button><button data-map-zoom="1.6" title="Acercar" aria-label="Acercar">${ico('plus', 18)}</button><button data-map-zoom="0.625" title="Alejar" aria-label="Alejar">${ico('minus', 18)}</button></div><svg id="map-svg" viewBox="${rect.x} ${rect.y} ${rect.w} ${rect.h}" preserveAspectRatio="xMidYMid meet" aria-label="Mapa interactivo con pa\u00edses y puertos"><rect x="-180" y="-60" width="240" height="200" fill="var(--sea)" />${countries.map(c => `<path data-country="${esc(c.name)}" d="${c.path}" class="country-shape ${S.country === c.name ? 'selected' : ''} ${['Peru', 'Chile', 'Colombia', 'Ecuador'].includes(c.name) ? 'eligible' : ''}" tabindex="0" role="button" aria-label="${esc(COUNTRY_ES[c.name] || c.name)}"><title>${esc(COUNTRY_ES[c.name] || c.name)}</title></path>`).join('')}${mapMarkers(id, rect)}</svg><div class="map-compass"><span>OC\u00c9ANO PAC\u00cdFICO</span></div>${S.country ? `<div class="map-country-tag"><button data-map-reset-country aria-label="Volver a todos los pa\u00edses">${ico('back', 15)}</button>${esc(COUNTRY_ES[S.country] || S.country)}</div>` : ''}</div>`; }
+function mapMarkup(id) { const rect = mapRectFor(id), countries = DATA.countries.countries; return `<div class="geo-shell"><div id="leaflet-map" class="leaflet-map" aria-label="Mapa interactivo de puertos y países"></div><div class="map-layer-toggle" role="group" aria-label="Tipo de mapa"><button data-base-map="satellite" class="${S.baseMap === 'satellite' ? 'chosen' : ''}">Satélite</button><button data-base-map="streets" class="${S.baseMap === 'streets' ? 'chosen' : ''}">Mapa</button></div><div class="geo-toolbar"><button data-map-zoom="1.6" title="Acercar" aria-label="Acercar">${ico('plus', 18)}</button><button data-map-zoom="0.625" title="Alejar" aria-label="Alejar">${ico('minus', 18)}</button><button data-map-reset title="Volver a vista general" aria-label="Vista general">${ico('reset', 17)}</button></div><svg id="map-svg" viewBox="${rect.x} ${rect.y} ${rect.w} ${rect.h}" preserveAspectRatio="xMidYMid meet" aria-label="Mapa vectorial alternativo, interactivo"><rect x="-180" y="-60" width="240" height="200" fill="#d2e1e4"/>${countries.map(c => `<path data-country="${esc(c.name)}" d="${c.path}" class="country-shape ${S.country === c.name ? 'selected' : ''} ${['Peru', 'Chile', 'Colombia', 'Ecuador'].includes(c.name) ? 'eligible' : ''}" tabindex="0" role="button" aria-label="${esc(COUNTRY_ES[c.name] || c.name)}"><title>${esc(COUNTRY_ES[c.name] || c.name)}</title></path>`).join('')}${mapMarkers(id, rect)}</svg><div class="map-compass">SELECCIONA UN PAÍS O UN PUERTO</div>${S.country ? `<div class="map-country-tag"><button data-map-reset-country aria-label="Mostrar todos los países">${ico('back', 15)}</button>${esc(COUNTRY_ES[S.country] || S.country)}</div>` : ''}</div>`; }
+function portPicture(code) { const k = code.startsWith('HHI') ? (code === 'HHI-CHY' ? 'PECHY' : 'PECLL') : code.startsWith('PER') ? (code === 'PER-PAI' ? 'PEPAI' : 'PECLL') : code; return `<img class="port-picture" src="./assets/ports/${k}.webp" alt="Imagen del puerto seleccionado" loading="lazy" onerror="this.remove()"/>`; }
 function tableRow(cells) { return `<tr>${cells.map(t => `<td>${t}</td>`).join('')}</tr>`; }
 function metricLabel(m) { return m === 'revenue' ? 'Ingresos (USD)' : m === 'teu' ? 'Contenedores (TEU)' : 'Naves atendidas'; }
 function portQuarter(id) { return DATA.ports.ports.find(p => p.code === id); }
@@ -100,22 +101,21 @@ function chartHtml(key, def) {
     return `<div class="chart-card" data-chart-wrap="${key}"><div class="chart-top"><div><h3>${esc(def.title)}</h3>${def.unit ? `<p>${esc(def.unit)}</p>` : ''}</div><div class="chart-buttons"><button data-export-png="${key}" title="Guardar gr\u00e1fico PNG">${ico('down', 15)} PNG</button><button data-export-xlsx="${key}" title="Descargar datos Excel">${ico('down', 15)} Excel</button></div></div><div class="svg-chart-shell"><svg class="data-chart" data-chart="${key}" viewBox="0 0 795 300" preserveAspectRatio="xMidYMid meet" aria-label="Gr\u00e1fico interactivo de ${esc(def.title)}"><g class="chart-grids">${ticks.map(t => `<line x1="64" x2="771" y1="${yy(t)}" y2="${yy(t)}"/><text x="54" y="${yy(t) + 4}" text-anchor="end">${num(t, def.unit?.includes('USD') ? 0 : 1)}</text>`).join('')}</g>${lines}<g class="chart-dates">${def.x.filter((_, i) => i % every === 0 || i === def.x.length - 1).map(t => { const i = def.x.indexOf(t); return `<text x="${xx(i)}" y="291" text-anchor="middle">${esc(t)}</text>`; }).join('')}</g><line data-crosshair x1="0" x2="0" y1="32" y2="270" stroke="#89817b" stroke-width="1" stroke-dasharray="4 6" visibility="hidden"/><rect class="chart-hit" x="58" y="15" width="715" height="255" fill="transparent"/></svg><div class="chart-pop" hidden></div></div>${def.series.length > 1 ? `<div class="chart-legend">${def.series.map(s => `<span><i style="background:${s.color}"></i>${esc(s.name)}</span>`).join('')}</div>` : ''}</div>`;
 }
 function pacificPanel() {
-    const p = portQuarter(S.port) || DATA.ports.ports[0], vals = DATA.ports.quarters.map(k => Number(p.quarterValues[k] || 0)), last = Number(p.quarterValues[S.quarter] || p.end), pct = (last / p.start - 1) * 100;
-    const countryList = DATA.ports.ports.filter(t => !S.country || S.country === t.country).sort((a, b) => (b.quarterValues[S.quarter] || 0) - (a.quarterValues[S.quarter] || 0));
-    return `<div class="detail-content"><div class="detail-heading"><span class="detail-type">${esc(COUNTRY_ES[p.country] || p.country)}</span><h2>${esc(p.name)}</h2></div><div class="metric-grid"><div><span>PLSCI</span><strong>${num(last, 2)}</strong></div><div><span>Cambio desde 2025 T1</span><strong>${pct >= 0 ? '+' : ''}${num(pct, 1)} %</strong></div></div><p class="metric-explain">El PLSCI mide la conectividad de un puerto con los servicios regulares de transporte mar\u00edtimo de contenedores. Un valor m\u00e1s alto indica mayor conectividad.</p><label class="control-line">Trimestre<select id="quarter-select">${selectOptions(DATA.ports.quarters.map(q => ({ name: q.replace('T', ' T'), value: q })), S.quarter)}</select></label>${chartHtml('pacific-port', { title: 'Conectividad de ' + p.name, x: DATA.ports.quarters.map(q => q.replace('T', ' T')), series: [{ name: p.name, values: vals, color: '#b88751' }], unit: '\u00cdndice PLSCI', file: 'conectividad_' + p.name.toLowerCase().replaceAll(' ', '_') })}<div class="detail-table"><h3>Puertos de la muestra</h3><div class="ports-table" role="list">${countryList.map(q => `<button role="listitem" data-port-pick="${esc(q.code)}" class="port-line ${q.code === p.code ? 'active' : ''}"><span>${esc(q.name)}</span><strong>${num(q.quarterValues[S.quarter] || 0, 1)}</strong>${ico('right', 14)}</button>`).join('')}</div></div></div>`;
+    const p = DATA.ports.ports.find(q => q.code === S.port) || DATA.ports.ports[0], quarters = DATA.ports.quarters, vals = quarters.map(k => Number(p.quarterValues[k])), last = Number(p.quarterValues[S.quarter]), pct = (last / Number(p.start) - 1) * 100;
+    const regionPorts = DATA.ports.ports.filter(t => !S.country || S.country === t.country).sort((a, b) => Number(b.quarterValues[S.quarter]) - Number(a.quarterValues[S.quarter]));
+    const compare = DATA.ports.ports.find(q => q.code === S.compare);
+    const compareValues = compare && compare.code !== p.code ? quarters.map(k => Number(compare.quarterValues[k])) : null;
+    return `<div class="detail-content"><div class="detail-heading port-with-photo">${portPicture(p.code)}<div><span class="detail-type">${esc(COUNTRY_ES[p.country] || p.country)}</span><h2>${esc(p.name)}</h2></div></div><div class="metric-grid"><div><span>Conectividad portuaria (PLSCI)</span><strong>${num(last, 2)}</strong></div><div><span>Variación desde 2025 T1</span><strong>${pct >= 0 ? '+' : ''}${num(pct, 1)} %</strong></div></div><p class="metric-explain">El PLSCI de UNCTAD resume la integración de cada puerto a los servicios regulares de transporte marítimo de contenedores. No mide ingresos ni tarifas.</p><div class="double-select"><label>Trimestre<select id="quarter-select">${selectOptions(quarters.map(q => ({ name: q.replace('T', ' T'), value: q })), S.quarter)}</select></label><label>Comparar con<select id="compare-select">${selectOptions([{ name: 'Sin comparación', value: '' }, ...DATA.ports.ports.filter(q => q.code !== p.code).map(q => ({ name: q.name, value: q.code }))], S.compare)}</select></label></div>${chartHtml('pacific-port', { title: 'Conectividad marítima', x: quarters.map(q => q.replace('T', ' T')), series: [{ name: p.name, values: vals, color: '#b47b49' }, ...(compareValues ? [{ name: compare?.name || 'Comparación', values: compareValues, color: '#254a62' }] : [])], unit: 'Puntos del índice PLSCI', file: 'plsc_' + p.code.toLowerCase() })}<div class="detail-table"><h3>Puertos</h3><div class="ports-table">${regionPorts.map(q => `<button data-port-pick="${esc(q.code)}" class="port-line ${q.code === p.code ? 'active' : ''}"><span>${esc(q.name)}</span><strong>${num(Number(q.quarterValues[S.quarter]), 1)}</strong>${ico('right', 14)}</button>`).join('')}</div></div></div>`;
 }
 function hhiPanel() {
     const chosen = S.port === 'HHI-CHY' ? 'Chancay' : 'Callao';
     const h = DATA.hhi;
-    const hhiType = S.hhiType === 'normalized';
-    const vals = hhiType ? h.normalized : h.compare.map(r => r.hhi), label = hhiType ? 'HHI normalizado' : '\u00cdndice Herfindahl-Hirschman (HHI)';
-    return `<div class="detail-content"><div class="detail-heading"><span class="detail-type">Costa central peruana</span><h2>${chosen}</h2><p>${chosen === 'Callao' ? 'APM Terminals y DP World' : 'Terminal de Chancay'}</p></div><div class="metric-grid"><div><span>HHI 2024</span><strong>${num(h.compare[0].hhi, 1)}</strong></div><div><span>HHI 2025</span><strong>${num(h.compare[1].hhi, 1)}</strong></div></div><p class="metric-explain">El HHI resume la concentraci\u00f3n del tr\u00e1fico de contenedores entre operadores. Los valores corresponden al conjunto Callao-Chancay, no al puerto elegido.</p><label class="control-line">Indicador<select id="hhi-select"><option value="hhi" ${!hhiType ? 'selected' : ''}>HHI</option><option value="normalized" ${hhiType ? 'selected' : ''}>HHI normalizado</option></select></label>${chartHtml('hhi-trend', { title: label, x: ['Jun-Oct 2024', 'Jun-Oct 2025'], series: [{ name: label, values: vals, color: '#a37648' }], unit: hhiType ? 'Escala normalizada' : 'Puntos HHI', file: hhiType ? 'hhi_normalizado' : 'concentracion_hhi' })}<div class="compact-facts"><div><span>Variaci\u00f3n</span><strong>-18,8 %</strong></div><div><span>Modelo AR(2)</span><strong>-752,1 puntos</strong></div><div><span>Cuota de Chancay en la descomposici\u00f3n</span><strong>87,4 %</strong></div></div></div>`;
+    return `<div class="detail-content"><div class="detail-heading port-with-photo">${portPicture(S.port)}<div><span class="detail-type">Costa central del Perú</span><h2>${chosen}</h2><p>${chosen === 'Callao' ? 'APM Terminals y DP World' : 'Terminal Portuario de Chancay'}</p></div></div><div class="metric-grid"><div><span>HHI 2024</span><strong>${num(h.compare[0].hhi, 1)}</strong></div><div><span>HHI 2025</span><strong>${num(h.compare[1].hhi, 1)}</strong></div></div><p class="metric-explain">El índice Herfindahl-Hirschman resume cómo se distribuye el tráfico total entre APM Callao, DP World Callao y Chancay. Son resultados del sistema conjunto, no valores individuales del puerto señalado.</p>${chartHtml('hhi-trend', { title: 'Concentración del tráfico', x: ['Jun–oct 2024', 'Jun–oct 2025'], series: [{ name: 'HHI', values: h.compare.map(r => r.hhi), color: '#9c673a' }], unit: 'Puntos HHI', file: 'hhi_comparacion_periodos' })}<div class="compact-facts"><div><span>Variación del índice</span><strong>−18,8 %</strong></div><div><span>Cambio estimado AR(2)</span><strong>−752,1 puntos</strong></div><div><span>Descomposición: cuota de Chancay</span><strong>87,4 %</strong></div></div></div>`;
 }
 function incomePanel() {
-    const rows = DATA.income.rows.filter(r => r.op === S.operator), vals = rows.map(r => r[S.metric]);
-    const last = rows.at(-1);
-    let totalTitle = P.peru.description;
-    return `<div class="detail-content"><div class="detail-heading"><span class="detail-type">${S.operator === 'PAITA' ? 'Paita' : 'Callao'}</span><h2>${S.operator === 'DPW' ? 'DP World' : S.operator === 'PAITA' ? 'Terminal Portuario de Paita' : 'APM Terminals'}</h2></div><div class="metric-grid"><div><span>${esc(metricLabel(S.metric))}</span><strong>${last ? num(last[S.metric], 0) : '--'}</strong></div><div><span>\u00daltimo mes</span><strong>${last ? esc(last.month) : '--'}</strong></div></div><div class="double-select"><label>Terminal<select id="operator-select">${selectOptions([{ name: 'APM Callao', value: 'APM' }, { name: 'DP World Callao', value: 'DPW' }, { name: 'Paita', value: 'PAITA' }], S.operator)}</select></label><label>Indicador<select id="income-metric-select">${selectOptions([{ name: 'Ingresos', value: 'revenue' }, { name: 'Contenedores', value: 'teu' }, { name: 'Naves', value: 'vessels' }], S.metric)}</select></label></div>${chartHtml('income-trend', { title: metricLabel(S.metric), x: rows.map(r => r.month), series: [{ name: S.operator, values: vals, color: '#a37648' }], unit: S.metric === 'revenue' ? 'USD' : S.metric === 'teu' ? 'TEU' : 'Naves', file: 'actividad_' + S.operator + '_' + S.metric })}<div class="compact-facts"><div><span>Elasticidad respecto a TEU</span><strong>${num(DATA.income.coefficients.find(c => c.variable === `C(op)[${S.operator}]:dln_teu`)?.value || 0, 3)}</strong></div><div><span>Elasticidad respecto a naves</span><strong>${num(DATA.income.coefficients.find(c => c.variable === `C(op)[${S.operator}]:dln_naves`)?.value || 0, 3)}</strong></div></div></div>`;
+    const rows = DATA.income.rows.filter(r => r.op === S.operator), vals = rows.map(r => r[S.metric]), last = rows.at(-1), port = S.operator === 'PAITA' ? 'PER-PAI' : 'PER-CAL', terminal = S.operator === 'DPW' ? 'DP World Callao' : S.operator === 'PAITA' ? 'Terminal Portuario de Paita' : 'APM Terminals Callao';
+    const teo = DATA.income.coefficients.find(c => c.variable === `C(op)[${S.operator}]:dln_teu`), naves = DATA.income.coefficients.find(c => c.variable === `C(op)[${S.operator}]:dln_naves`);
+    return `<div class="detail-content"><div class="detail-heading port-with-photo">${portPicture(port)}<div><span class="detail-type">${S.operator === 'PAITA' ? 'Paita' : 'Callao'}</span><h2>${terminal}</h2></div></div><div class="metric-grid"><div><span>${esc(metricLabel(S.metric))}</span><strong>${last ? num(last[S.metric], 0) : '—'}</strong></div><div><span>Último registro disponible</span><strong>${last ? esc(last.month) : '—'}</strong></div></div><div class="double-select"><label>Operador<select id="operator-select">${selectOptions([{ name: 'APM Callao', value: 'APM' }, { name: 'DP World Callao', value: 'DPW' }, { name: 'Paita', value: 'PAITA' }], S.operator)}</select></label><label>Variable<select id="income-metric-select">${selectOptions([{ name: 'Ingresos', value: 'revenue' }, { name: 'Contenedores', value: 'teu' }, { name: 'Naves', value: 'vessels' }], S.metric)}</select></label></div>${chartHtml('income-trend', { title: metricLabel(S.metric), x: rows.map(r => r.month), series: [{ name: terminal, values: vals, color: '#345b76' }], unit: S.metric === 'revenue' ? 'USD' : S.metric === 'teu' ? 'TEU' : 'Naves', file: 'actividad_' + S.operator + '_' + S.metric })}<div class="compact-facts"><div><span>Elasticidad frente a TEU</span><strong>${teo ? num(teo.value, 3) : '—'}</strong></div><div><span>Elasticidad frente a naves</span><strong>${naves ? num(naves.value, 3) : '—'}</strong></div></div></div>`;
 }
 function homeOrRoute() { const raw = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean); if (raw[0] !== 'investigacion' || !projectEntries.includes(raw[1])) {
     S.view = 'home';
@@ -132,7 +132,7 @@ function homeOrRoute() { const raw = location.hash.replace(/^#\/?/, '').split('/
 } if (S.view === 'study') {
     S.chapter = CHAPTERS.find(c => c.id === raw[3])?.id || 'introduccion';
 } }
-function render() { destroyLeaflet(); homeOrRoute(); CHARTS.clear(); ui.innerHTML = `${header()}<div class="page-transition" key="${S.view}">${S.view === 'home' ? home() : S.view === 'dashboard' ? dashboard(S.project) : studyPage(S.project)}</div>${S.view === 'home' ? footer() : ''}<div id="modal"></div>`; afterRender(); }
+function render() { destroyLeaflet(); homeOrRoute(); CHARTS.clear(); ui.innerHTML = `${header()}<div class="page-transition" key="${S.view}">${S.view === 'home' ? home() : S.view === 'dashboard' ? dashboard(S.project) : studyPage(S.project)}</div><div id="modal"></div>`; afterRender(); }
 function rerenderPartial() { const d = document.getElementById('map-details'); if (d && S.project) {
     CHARTS.clear();
     d.innerHTML = dashboardPanel(S.project);
@@ -142,8 +142,14 @@ function updateSelection(country, port) {
     if (!S.project)
         return;
     const id = S.project;
-    if (country !== undefined)
+    if (country !== undefined) {
         S.country = country;
+        if (country && id === 'pacifico') {
+            const inCountry = mapPorts(id).find(p => p.country === country);
+            if (inCountry)
+                S.port = inCountry.code;
+        }
+    }
     if (port) {
         S.port = port;
         if (id === 'peru') {
@@ -247,9 +253,32 @@ function countryCoordinates(path) {
 function updateLeafletStyles() {
     if (!leafletMap)
         return;
-    leafletCountries.forEach(it => { let active = it.name === S.country; it.layer.setStyle({ fillOpacity: active ? .22 : .06, fillColor: active ? '#9b7651' : '#d4c6b7', color: active ? '#9c7956' : '#b3a89b', weight: active ? 2 : 1 }); });
-    leafletPorts.forEach(({ layer, port }) => { const chosen = port.code === S.port || (S.project === 'peru' && ((S.operator === 'PAITA' && port.name === 'Paita') || (S.operator !== 'PAITA' && port.name === 'Callao'))); const faded = !!S.country && port.country !== S.country; layer.setStyle({ radius: chosen ? 9 : 7, color: '#fffdf9', weight: chosen ? 3 : 2, fillColor: chosen ? '#9c6e44' : '#414043', fillOpacity: faded ? .35 : 1, opacity: faded ? .6 : 1 }); });
+    leafletCountries.forEach(it => { let active = it.name === S.country; it.layer.setStyle({ fillOpacity: active ? .24 : .07, fillColor: active ? '#b27f53' : '#dae5e7', color: active ? '#f3c68a' : '#e1e4e3', weight: active ? 2.5 : 1.5 }); });
+    leafletPorts.forEach(({ layer, port }) => { const chosen = port.code === S.port || (S.project === 'peru' && ((S.operator === 'PAITA' && port.name === 'Paita') || (S.operator !== 'PAITA' && port.name === 'Callao'))); const faded = !!S.country && port.country !== S.country; layer.setStyle({ radius: chosen ? 11 : 8, color: '#fefcf5', weight: chosen ? 3.5 : 2.2, fillColor: chosen ? '#ba7e4b' : '#183d54', fillOpacity: faded ? .35 : 1, opacity: faded ? .6 : 1 }); });
     countryTag();
+}
+let leafletTiles = null;
+function setMapLayer() {
+    if (!leafletMap)
+        return;
+    const L = window.L;
+    if (leafletTiles) {
+        try {
+            leafletMap.removeLayer(leafletTiles);
+        }
+        catch { }
+    }
+    const layer = S.baseMap === 'satellite' ? L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { maxZoom: 18, attribution: 'Images © Esri, Maxar, Earthstar Geographics, GIS User Community', crossOrigin: true }) : L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19, attribution: '© OpenStreetMap contributors', crossOrigin: true });
+    let hasTiles = false;
+    layer.on('tileload', () => { hasTiles = true; document.querySelector('.geo-shell')?.classList.add('leaflet-ready'); });
+    layer.on('tileerror', () => { if (S.baseMap === 'satellite' && !hasTiles) {
+        S.baseMap = 'streets';
+        document.querySelectorAll('[data-base-map]').forEach(n => n.classList.toggle('chosen', n.dataset.baseMap === 'streets'));
+        window.setTimeout(() => { if (leafletMap)
+            setMapLayer(); }, 650);
+    } });
+    leafletTiles = layer;
+    layer.addTo(leafletMap);
 }
 function initLeafletMap() {
     const L = window.L;
@@ -257,10 +286,7 @@ function initLeafletMap() {
     if (!L || !node || !S.project)
         return;
     try {
-        leafletMap = L.map(node, { zoomControl: false, attributionControl: true, scrollWheelZoom: true, preferCanvas: true, zoomSnap: .1, minZoom: 2, maxZoom: 15, worldCopyJump: false });
-        const tiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', { subdomains: 'abcd', maxZoom: 18, attribution: '&copy; OpenStreetMap contributors &copy; CARTO' });
-        tiles.on('load', () => node.closest('.geo-shell')?.classList.add('leaflet-ready'));
-        tiles.addTo(leafletMap);
+        leafletMap = L.map(node, { zoomControl: false, attributionControl: true, scrollWheelZoom: true, preferCanvas: false, zoomSnap: .25, minZoom: 2, maxZoom: 18, worldCopyJump: false });
         leafletCountries = [];
         for (const c of DATA.countries.countries) {
             if (!['Peru', 'Chile', 'Ecuador', 'Colombia'].includes(c.name))
@@ -268,34 +294,36 @@ function initLeafletMap() {
             const coords = countryCoordinates(c.path);
             if (!coords.length)
                 continue;
-            const layer = L.polygon(coords, { stroke: true, weight: 1, color: '#b3a89b', fillColor: '#d4c6b7', fillOpacity: .06, interactive: S.project === 'pacifico', bubblingMouseEvents: false });
+            const layer = L.polygon(coords, { stroke: true, weight: 1.6, color: '#f1f0e9', fillColor: '#d7e7ef', fillOpacity: .065, interactive: S.project === 'pacifico', bubblingMouseEvents: false });
             layer.addTo(leafletMap);
             if (S.project === 'pacifico') {
                 layer.bindTooltip(COUNTRY_ES[c.name] || c.name, { direction: 'center', sticky: true, className: 'geo-country-tooltip' });
-                layer.on('mouseover', () => layer.setStyle({ fillOpacity: .18, weight: 1.5 }));
+                layer.on('mouseover', () => layer.setStyle({ fillOpacity: .18, weight: 2.5 }));
                 layer.on('mouseout', () => updateLeafletStyles());
-                layer.on('click', () => { S.country = c.name; rerenderPartial(); updateLeafletStyles(); leafletMap.flyToBounds(layer.getBounds(), { padding: [30, 30], duration: 1, maxZoom: 6 }); });
+                layer.on('click', () => { S.country = c.name; const first = mapPorts('pacifico').find(p => p.country === c.name); if (first)
+                    S.port = first.code; rerenderPartial(); updateLeafletStyles(); const inCountry = mapPorts('pacifico').filter(p => p.country === c.name); if (inCountry.length)
+                    leafletMap.flyToBounds(L.latLngBounds(inCountry.map(p => [p.lat, p.lon])).pad(.35), { padding: [45, 45], maxZoom: 7, duration: 1.1 }); });
             }
             leafletCountries.push({ name: c.name, layer });
         }
         leafletPorts = [];
         const pins = mapPorts(S.project);
         pins.forEach(p => {
-            const layer = L.circleMarker([p.lat, p.lon], { radius: 7, color: '#fffaf3', fillColor: '#414043', fillOpacity: 1, weight: 2, bubblingMouseEvents: false });
-            layer.bindTooltip(p.name, { direction: 'top', offset: [0, -5], className: 'geo-port-tooltip' });
+            const layer = L.circleMarker([p.lat, p.lon], { radius: 8, color: '#f8f5ee', fillColor: '#183d54', fillOpacity: 1, weight: 2.4, bubblingMouseEvents: false });
+            layer.bindTooltip(p.name, { direction: 'top', offset: [0, -9], className: 'geo-port-tooltip' });
             layer.addTo(leafletMap);
-            layer.on('mouseover', () => layer.setStyle({ radius: 10, fillColor: '#9c6e44' }));
+            layer.on('mouseover', () => layer.setStyle({ radius: 11, fillColor: '#b77f44' }));
             layer.on('mouseout', () => updateLeafletStyles());
-            layer.on('click', () => { updateSelection(undefined, p.code); });
+            layer.on('click', () => updateSelection(undefined, p.code));
             leafletPorts.push({ port: p, layer });
         });
         leafletBaseBounds = L.latLngBounds(pins.map(p => [p.lat, p.lon]));
-        leafletMap.fitBounds(leafletBaseBounds, { padding: [45, 45], maxZoom: S.project === 'hhi' ? 10 : 7, animate: false });
+        leafletMap.fitBounds(leafletBaseBounds, { padding: [75, 65], maxZoom: S.project === 'hhi' ? 10 : 6.5, animate: false });
         updateLeafletStyles();
-        // Fallback cartography remains interactive until raster map tiles have loaded.
+        setMapLayer();
         requestAnimationFrame(() => leafletMap?.invalidateSize());
     }
-    catch (err) {
+    catch (e) {
         destroyLeaflet();
     }
 }
@@ -535,14 +563,8 @@ const THEORY_TOPIC = [
 ];
 function theoryInfo(p, id) { if (/pendiente/i.test(p.title))
     return { fund: 'La referencia se encuentra pendiente de verificaci\u00f3n documental.', usage: 'No se presenta como material revisado hasta contar con el documento comprobado.' }; const t = THEORY_TOPIC.find(x => x.match.test(p.title)); return { fund: t?.fund || 'La obra examina los mecanismos econ\u00f3micos que explican la organizaci\u00f3n de los mercados y la relaci\u00f3n entre sus participantes.', usage: t?.usage || 'Sirve como referencia conceptual para contextualizar las preguntas de esta investigaci\u00f3n.' }; }
-function workQuartile(d) {
-    let journal = (d.journal || '').toLowerCase().trim();
-    const lookup = Object.entries(SJR).find(([j]) => journal.startsWith(j));
-    const candidate = lookup?.[1];
-    const quartile = candidate?.q || (d.quartile && !d.quartile.includes('*') ? d.quartile : null);
-    const linkSjr = candidate?.link || `https://www.scimagojr.com/journalsearch.php?q=${encodeURIComponent((d.journal || d.title).replace(/,.*$/, ''))}`;
-    return `<a class="quartile-link" href="${esc(linkSjr)}" target="_blank" rel="noopener noreferrer" title="Verificar el cuartil de la revista en SCImago">${quartile ? `SJR ${esc(quartile)}` : 'Consultar SJR'} ${ico('external', 12)}</a>`;
-}
+function workQuartile(d) { if (d.kind !== 'antecedente')
+    return ''; const title = (d.journal || '').trim().toLowerCase(); const sjr = SJR[title]; const q = d.quartileSource?.includes('scimagojr.com') ? d.quartile : (sjr ? sjr.q : null); const url = d.quartileSource?.includes('scimagojr.com') ? d.quartileSource : (sjr ? sjr.link : null); return q && url ? `<a target="_blank" rel="noopener noreferrer" href="${esc(url)}" title="Consultar clasificación por año y categoría en SCImago">SJR ${esc(q)} ${ico('external', 13)}</a>` : (d.journal ? `<a href="https://www.scimagojr.com/journalsearch.php" target="_blank" rel="noopener noreferrer" title="Consultar revista en SCImago">Consultar SJR ${ico('external', 12)}</a>` : ''); }
 function summaryGeneral(d) {
     const x = d.sections || {};
     const first = (raw, max) => { const t = (raw || '').replace(/\s+/g, ' ').trim(); if (!t)
@@ -559,12 +581,15 @@ function summaryGeneral(d) {
     return [start, method, result].filter(Boolean).join(' ');
 }
 function litTabs(d) { return ['resumen', 'contexto', 'problema', 'objetivo', 'metodologia', 'resultados', 'conclusiones'].map((t, i) => `<button data-lit-tab="${t}" data-lit-id="${d.id}" class="lit-tab ${S.litTab === t ? 'active' : ''}">${['Resumen general', 'Contexto', 'Problema', 'Objetivo', 'Metodolog\u00eda', 'Resultados', 'Conclusiones'][i]}</button>`).join(''); }
-function litParagraph(d, tab) { if (tab === 'resumen')
-    return summaryGeneral(d); return d.sections?.[tab] || 'Este apartado no est\u00e1 desarrollado en la ficha original.'; }
+function litParagraph(d, tab) { if (tab === 'resumen') {
+    const parts = [d.summary, d.sections?.objetivo, d.sections?.metodologia, d.sections?.resultados].filter((v) => typeof v === 'string' && v.trim().length > 20);
+    return parts.filter((v, i) => !parts.slice(0, i).some(a => a.toLowerCase().trim() === v.toLowerCase().trim())).join(' ');
+} return d.sections?.[tab] || 'La ficha disponible no desarrolla de manera independiente este apartado.'; }
 function secureButtons(d) { return `<div class="work-actions">${d.poster ? `<a href="${docUrl(d.poster)}" target="_blank" rel="noopener noreferrer" class="outline-btn">${ico('down', 15)} P\u00f3ster</a>` : ''}${d.originalEncrypted ? `<button data-secure="${esc(d.id)}" data-kind="original" class="outline-btn">${ico('lock', 14)} Art\u00edculo original</button>` : d.source ? link(d.source, 'Art\u00edculo original', 'outline-btn') : ''}${d.esEncrypted ? `<button data-secure="${esc(d.id)}" data-kind="es" class="outline-btn">${ico('lock', 14)} Versi\u00f3n en espa\u00f1ol</button>` : ''}</div>`; }
 function litCard(d, kind) {
-    const summary = kind === 'antecedente' ? `<div class="lit-tabs">${litTabs(d)}</div><div class="lit-section-body">${esc(litParagraph(d, S.litTab))}</div>` : (() => { const k = theoryInfo(d, S.project); return `<div class="theory-copy"><h3>Fundamento</h3><p>${esc(k.fund)}</p><h3>Relaci\u00f3n con el estudio</h3><p>${esc(k.usage)}</p></div>`; })();
-    return `<article class="lit-item ${S.openLit === d.id ? 'expanded' : ''}" data-work="${d.id}" style="--cover-image:url('${d.cover ? docUrl(d.cover) : ''}')"><button class="work-head" data-work-toggle="${d.id}" aria-expanded="${S.openLit === d.id ? 'true' : 'false'}"><span class="work-cover">${d.cover ? `<img src="${docUrl(d.cover)}" alt="Portada editorial" loading="lazy"/>` : `<span class="cover-placeholder">${ico('book', 26)}</span>`}</span><span class="work-id"><strong>${esc(d.title)}</strong><small>${esc(d.authors)}</small>${kind === 'antecedente' ? `<span class="work-journal">${esc(d.journal || '')} ${d.year ? '(' + esc(d.year) + ')' : ''}</span>` : ''}</span><span class="work-arrow">${ico(S.openLit === d.id ? 'close' : 'plus', 19)}</span></button>${kind === 'antecedente' ? `<div class="work-quartile">${workQuartile(d)}</div>` : ''}<div class="work-reveal"><div class="work-reveal-inner">${summary}${secureButtons(d)}</div></div></article>`;
+    const content = kind === 'antecedente' ? `<div class="lit-tabs">${litTabs(d)}</div><div class="lit-section-body">${esc(litParagraph(d, S.litTab))}</div>${d.doi ? `<div class="lit-citation"><a target="_blank" rel="noopener noreferrer" href="https://doi.org/${esc(d.doi)}">DOI ${ico('external', 13)}</a></div>` : ''}` : (() => { if (d.unverified)
+        return `<p class="theory-warning">Este documento figura como referencia pendiente en el inventario original. No se incluye una explicación que no haya podido verificarse.</p>`; const info = theoryInfo(d, S.project); const excerpts = (d.theoryEvidence || []).filter((t) => t.length > 100).slice(0, 3); return `<div class="theory-copy"><h3>Fundamentos</h3><p>${esc(info.fund)}</p>${excerpts[0] ? `<p>${esc(excerpts[0])}</p>` : ''}<h3>Desarrollo y mecanismos</h3>${excerpts.slice(1).map((t) => `<p>${esc(t)}</p>`).join('')}<h3>Relación con la investigación</h3><p>${esc(info.usage)}</p></div>`; })();
+    return `<article class="lit-item ${S.openLit === d.id ? 'expanded' : ''}" data-work="${d.id}"><button class="work-head" data-work-toggle="${d.id}" aria-expanded="${S.openLit === d.id ? 'true' : 'false'}"><span class="work-cover">${d.cover ? `<img src="${docUrl(d.cover)}" alt="Portada de la publicación" loading="lazy"/>` : `<span class="cover-placeholder">${ico('book', 26)}</span>`}</span><span class="work-id"><strong>${esc(d.title)}</strong><small>${esc(d.authors)}</small>${kind === 'antecedente' ? `<span class="work-journal">${esc(d.journal || '')} ${d.year ? '(' + esc(d.year) + ')' : ''}</span>` : ''}</span><span class="work-arrow">${ico(S.openLit === d.id ? 'close' : 'plus', 19)}</span></button>${kind === 'antecedente' ? `<div class="work-quartile">${workQuartile(d)}</div>` : ''}<div class="work-reveal"><div class="work-reveal-inner">${content}${secureButtons(d)}</div></div></article>`;
 }
 function literatureSection(id, kind) { const works = DATA.literature.items.filter(d => d.project === id && d.kind === kind), q = S.search.toLowerCase(), filtered = works.filter(d => `${d.title} ${d.authors} ${d.journal || ''}`.toLowerCase().includes(q)); return `<div class="literature-area"><div class="search-area">${ico('search', 17)}<input id="literature-search" type="search" placeholder="Buscar autor, t\u00edtulo o revista" value="${esc(S.search)}" autocomplete="off"/></div><div id="literature-list" class="literature-list">${filtered.map(d => litCard(d, kind)).join('') || '<p class="no-results">Sin resultados para esta b\u00fasqueda.</p>'}</div></div>`; }
 const SOURCE_LINKS = {
@@ -573,13 +598,10 @@ const SOURCE_LINKS = {
     peru: [{ name: 'OSITRAN', desc: 'Actividad e ingresos de terminales concesionados.', url: 'https://www.ositran.gob.pe/' }, { name: 'Banco Central de Reserva del Per\u00fa', desc: 'Tipo de cambio e \u00edndices de precios.', url: 'https://estadisticas.bcrp.gob.pe/estadisticas/series/' }]
 };
 function formula(id) {
-    if (id === 'hhi')
-        return `<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><msub><mi>HHI</mi><mi>t</mi></msub><mo>=</mo><mn>10000</mn><munderover><mo>\u2211</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><msub><mi>N</mi><mi>t</mi></msub></munderover><msup><msub><mi>s</mi><mrow><mi>i</mi><mi>t</mi></mrow></msub><mn>2</mn></msup></mrow></math>`;
-    if (id === 'pacifico')
-        return `<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi mathvariant="normal">ln</mi><mo>(</mo><msub><mi>PLSCI</mi><mrow><mi>i</mi><mi>t</mi></mrow></msub><mo>)</mo><mo>=</mo><msub><mi>\u03b1</mi><mi>i</mi></msub><mo>+</mo><msub><mi>\u03bb</mi><mi>t</mi></msub><mo>+</mo><munder><mo>\u2211</mo><mrow><mi>j</mi><mo>\u2260</mo><mi>Callao</mi></mrow></munder><msub><mi>\u03b3</mi><mi>j</mi></msub><mo>(</mo><msub><mi>D</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>\u00d7</mo><msub><mi>\u03c4</mi><mi>t</mi></msub><mo>)</mo><mo>+</mo><msub><mi>\u03b5</mi><mrow><mi>i</mi><mi>t</mi></mrow></msub></mrow></math>`;
-    return `<math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mrow><mi>\u0394</mi><mi mathvariant="normal">ln</mi><mo>(</mo><msub><mi>R</mi><mrow><mi>i</mi><mi>t</mi></mrow></msub><mo>)</mo><mo>=</mo><msub><mi>\u03b1</mi><mi>i</mi></msub><mo>+</mo><msub><mi>\u03bb</mi><mi>t</mi></msub><mo>+</mo><msub><mi>\u03b2</mi><mi>i</mi></msub><mi>\u0394</mi><mi mathvariant="normal">ln</mi><mo>(</mo><msub><mi>TEU</mi><mrow><mi>i</mi><mi>t</mi></mrow></msub><mo>)</mo><mo>+</mo><msub><mi>\u03b8</mi><mi>i</mi></msub><mi>\u0394</mi><mi mathvariant="normal">ln</mi><mo>(</mo><msub><mi>Naves</mi><mrow><mi>i</mi><mi>t</mi></mrow></msub><mo>)</mo><mo>+</mo><msub><mi>\u03b4</mi><mi>i</mi></msub><msub><mi>Post</mi><mrow><mi>i</mi><mi>t</mi></mrow></msub><mo>+</mo><msub><mi>\u03b5</mi><mrow><mi>i</mi><mi>t</mi></mrow></msub></mrow></math>`;
+    const label = id === 'hhi' ? 'Cambio de nivel del índice HHI con tendencia, estacionalidad, controles económicos y errores AR(2)' : id === 'pacifico' ? 'Logaritmo del PLSCI con efectos fijos de puerto y trimestre y tendencias específicas frente a Callao' : 'Primera diferencia logarítmica de ingresos con efectos fijos e interacciones de APM y DPW respecto a Paita';
+    return `<img class="equation-image" src="./assets/equations/${id}-model.svg" alt="${esc(label)}" />`;
 }
-function modelNote(id) { return id === 'pacifico' ? 'Efectos fijos de puerto y trimestre; tendencias espec\u00edficas por puerto con Callao como referencia.' : id === 'hhi' ? 'La participaci\u00f3n de cada terminal se expresa como fracci\u00f3n del tr\u00e1fico total del conjunto.' : 'Las variaciones mensuales de ingresos se relacionan con cambios de actividad; pendientes espec\u00edficas por terminal.'; }
+function modelNote(id) { return id === 'pacifico' ? 'El logaritmo del PLSCI es la variable dependiente. Los efectos de puerto y trimestre se complementan con tendencias específicas respecto de Callao. La tendencia está centrada en 2025 T4. Son catorce puertos durante siete trimestres (98 observaciones).' : id === 'hhi' ? 'El HHI conjunto se explica mediante el indicador posterior a junio de 2025, tendencia, once indicadores mensuales, controles de pandemia y comercio exterior. El error sigue un proceso AR(2). El coeficiente δ expresa una diferencia condicionada de nivel en puntos HHI y no un efecto causal probado.' : 'La regresión utiliza primeras diferencias logarítmicas de ingresos, TEU y naves, efectos fijos de operador y fecha y pendientes diferenciadas por terminal. Las interacciones posteriores a junio de 2025 comparan APM y DP World con Paita. Se estimaron 450 observaciones de 150 meses comunes.'; }
 function notebookCell(id) {
     const book = NOTEBOOKS[id];
     if (!book)
@@ -595,9 +617,10 @@ function notebookCell(id) {
 function initNotebook() { }
 ;
 function methodsContent(id) {
-    const steps = id === 'pacifico' ? ['Descarga de indicadores trimestrales de conectividad.', 'Preparaci\u00f3n del panel de catorce puertos.', 'Estimaci\u00f3n del modelo y comprobaciones de sensibilidad.'] : id === 'hhi' ? ['Reuni\u00f3n de estad\u00edsticas mensuales de contenedores.', 'C\u00e1lculo del HHI y de su descomposici\u00f3n.', 'Estimaci\u00f3n temporal y an\u00e1lisis de robustez.'] : ['Revisi\u00f3n de ingresos, TEU y naves por operador.', 'Homogeneizaci\u00f3n de monedas y construcci\u00f3n de las diferencias logar\u00edtmicas.', 'Estimaci\u00f3n del panel e inferencia estad\u00edstica.'];
-    const extra = id === 'pacifico' ? [['Panel trimestral PLSCI', 'pacifico_panel_98.csv'], ['Coordenadas portuarias', 'pacifico_coordenadas_14.csv']] : id === 'peru' ? [['Panel mensual de terminales', 'peru_panel_453_resumen.csv']] : [];
-    return `<div class="methods-flow">${steps.map((s, i) => `<div><span>${String(i + 1).padStart(2, '0')}</span><p>${esc(s)}</p></div>`).join('')}</div><h2>Fuentes de datos</h2><div class="source-links">${SOURCE_LINKS[id].map(s => `<a href="${s.url}" target="_blank" rel="noopener noreferrer"><strong>${esc(s.name)}</strong><small>${esc(s.desc)}</small>${ico('external', 17)}</a>`).join('')}</div><h2>Modelo econom\u00e9trico</h2><div class="model-panel"><div class="model-formula">${formula(id)}</div><p>${esc(modelNote(id))}</p></div><h2>Obtenci\u00f3n y estimaci\u00f3n en Python</h2><p class="section-description">El cuaderno conserva las consultas, la construcci\u00f3n de la base y las estimaciones. Cada bloque puede abrirse para consultar su c\u00f3digo.</p>${notebookCell(id)}${extra.length ? `<div class="data-downloads">${extra.map(([label, name]) => `<a href="./data/tables/${name}" download class="outline-btn">${ico('down', 15)} ${esc(label)}</a>`).join('')}</div>` : ''}`;
+    const steps = id === 'pacifico' ? ['Se obtuvieron las observaciones trimestrales del PLSCI de UNCTAD para los catorce puertos incluidos.', 'Se construyó el panel balanceado de siete trimestres y se transformó el índice a logaritmos.', 'Se estimaron efectos fijos de puerto y trimestre, tendencias por puerto y diagnósticos complementarios.'] : id === 'hhi' ? ['Se organizaron los datos mensuales de tráfico de contenedores de APN y los controles económicos de BCRP.', 'Se calculó el HHI del conjunto y se descompuso la variación de los períodos comparados.', 'Se estimó el cambio de nivel mediante una regresión con errores AR(2), seguida de especificaciones de sensibilidad.'] : ['Se revisaron los registros mensuales de ingresos, TEU y naves de tres terminales, atendiendo a la moneda y a la comparabilidad.', 'Se calcularon primeras diferencias logarítmicas de las tres variables de actividad e ingresos.', 'Se estimaron efectos fijos y elasticidades por terminal; se aplicaron pruebas y errores agrupados por fecha.'];
+    const extra = id === 'pacifico' ? [['Panel PLSCI', 'pacifico_panel_98.csv'], ['Coordenadas', 'pacifico_coordenadas_14.csv']] : id === 'peru' ? [['Panel de terminales', 'peru_panel_453_resumen.csv']] : [];
+    const HHI = id === 'hhi' ? `<section class="indicator-definition"><h3>Cálculo del índice de concentración</h3><div class="short-formula"><img src="./assets/equations/hhi-index.svg" alt="HHI t igual a diez mil por la suma de los cuadrados de las participaciones de tráfico" class="equation-image" /></div><p>La expresión mide concentración a partir de participaciones de tráfico, pero no es la regresión econométrica del artículo.</p></section>` : '';
+    return `<div class="methods-flow">${steps.map((s, i) => `<div><span>${String(i + 1).padStart(2, '0')}</span><p>${esc(s)}</p></div>`).join('')}</div><h2>Fuentes de datos</h2><div class="source-links">${SOURCE_LINKS[id].map(s => `<a href="${s.url}" target="_blank" rel="noopener noreferrer"><strong>${esc(s.name)}</strong><small>${esc(s.desc)}</small>${ico('external', 17)}</a>`).join('')}</div>${HHI}<h2>Especificación econométrica principal</h2><div class="model-panel"><div class="model-formula">${formula(id)}</div><p>${esc(modelNote(id))}</p></div><h2>Obtención y estimación en Python</h2><p class="section-description">Los notebooks permiten revisar las consultas, las transformaciones y el procedimiento de estimación.</p>${notebookCell(id)}${extra.length ? `<div class="data-downloads">${extra.map(([label, name]) => `<a href="./data/tables/${name}" download class="outline-btn">${ico('down', 15)} ${esc(label)}</a>`).join('')}</div>` : ''}`;
 }
 function resultsContent(id) {
     if (id === 'pacifico') {
@@ -623,6 +646,7 @@ const CONC = {
 };
 function discussionContent(id) { return `<div class="prose lead-prose">${DISC[id].map(t => `<p>${esc(t)}</p>`).join('')}</div><div class="question-plate"><span>Alcance del estudio</span><p>Las comparaciones se interpretan dentro de la muestra, las variables y el per\u00edodo documentados en el art\u00edculo.</p></div>`; }
 function conclusionContent(id) { return `<div class="conclusions">${CONC[id].map((t, i) => `<div><span>${String(i + 1).padStart(2, '0')}</span><p>${esc(t)}</p></div>`).join('')}</div>`; }
+function aboutModal() { document.getElementById('modal').innerHTML = `<div class="overlay" data-close-modal><div class="dialog about-dialog" role="dialog" aria-modal="true" aria-label="About us"><button class="dialog-close" data-close-modal aria-label="Cerrar">${ico('close', 20)}</button><h2>About us</h2><div class="contact-line"><strong>Orellana Allpoc Joseph</strong><a href="mailto:e_2022200289D@uncp.edu.pe">e_2022200289D@uncp.edu.pe</a></div><div class="contact-line"><strong>Bartolo Artica Lizzie</strong><a href="mailto:e_2022200264A@uncp.edu.pe">e_2022200264A@uncp.edu.pe</a></div></div></div>`; document.body.classList.add('modal-open'); }
 function modalClose() { document.getElementById('modal').innerHTML = ''; document.body.classList.remove('modal-open'); S.secureId = ''; }
 function modalOpen(id, kind) { const d = DATA.literature.items.find(q => q.id === id); if (!d)
     return; S.secureId = id; S.secureKind = kind; document.getElementById('modal').innerHTML = `<div class="overlay" data-close-modal><div class="dialog" role="dialog" aria-modal="true" aria-label="Acceso acad\u00e9mico"><button data-close-modal class="dialog-close">${ico('close', 20)}</button><div class="dialog-lock">${ico('lock', 25)}</div><h2>Acceso acad\u00e9mico</h2><p>Documento para revisi\u00f3n docente y consulta acad\u00e9mica. Los derechos de las obras corresponden a sus autores y editoriales.</p><div class="dialog-work">${esc(d.title)}</div><form id="unlock-form"><label for="unlock-password">Contrase\u00f1a</label><input type="password" id="unlock-password" required autocomplete="off" placeholder="Contrase\u00f1a de acceso"/><span role="status" id="unlock-status"></span><button type="submit" class="primary-link">Abrir documento ${ico('arrow', 16)}</button></form><small>Con fines acad\u00e9micos. La clave no sustituye la autorizaci\u00f3n de distribuci\u00f3n.</small></div></div>`; document.body.classList.add('modal-open'); document.getElementById('unlock-password')?.focus(); }
@@ -664,6 +688,18 @@ async function unlockDocument() {
 function wireEvents() {
     document.addEventListener('click', ev => {
         const t = ev.target;
+        if (t.closest('[data-about]')) {
+            aboutModal();
+            return;
+        }
+        const tile = t.closest('[data-base-map]');
+        if (tile) {
+            S.baseMap = tile.dataset.baseMap === 'streets' ? 'streets' : 'satellite';
+            document.querySelectorAll('[data-base-map]').forEach(node => node.classList.toggle('chosen', node.dataset.baseMap === S.baseMap));
+            if (leafletMap)
+                setMapLayer();
+            return;
+        }
         const png = t.closest('[data-export-png]');
         if (png) {
             exportPNG(png.dataset.exportPng || '');
@@ -797,7 +833,11 @@ function wireEvents() {
         if (list)
             list.innerHTML = d.map(d => litCard(d, kind)).join('') || '<p class="no-results">No se encontraron coincidencias.</p>';
     } });
-    document.addEventListener('change', ev => { const target = ev.target; const id = target.id; if (id === 'quarter-select') {
+    document.addEventListener('change', ev => { const target = ev.target; const id = target.id; if (id === 'compare-select') {
+        S.compare = target.value;
+        rerenderPartial();
+    }
+    else if (id === 'quarter-select') {
         S.quarter = target.value;
         rerenderPartial();
     }
