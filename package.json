@@ -1,12 +1,1 @@
-{
-  "name": "joseph-oreall-research-workspace",
-  "version": "1.0.0",
-  "private": true,
-  "type": "module",
-  "description": "Interactive research portfolio with spatial analysis and reproducible notebooks.",
-  "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "start": "python -m http.server 8000 --directory public",
-    "check": "tsc --noEmit -p tsconfig.json"
-  }
-}
+{"name":"works-regulation","version":"2.0.0","private":true,"type":"module","scripts":{"build":"tsc -p tsconfig.json","check":"tsc -p tsconfig.json --noEmit"}}
